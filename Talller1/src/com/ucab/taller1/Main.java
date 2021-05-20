@@ -1,6 +1,7 @@
 package com.ucab.taller1;
 
 import java.io.IOException;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -13,7 +14,7 @@ public class Main {
 		
 		Scanner scan = new Scanner(System.in);
 
-		while (true) {			
+		while (true) {
 			System.out.println();
 			System.out.println("1. Calcular el area de un cuadrado.");
 			System.out.println("2. Calcular el area de un triangulo.");
@@ -28,21 +29,33 @@ public class Main {
 			
 			Shape shape = null;
 
-			if (option.equals("1")) {				
-				shape = Square.fromStdin(scan);
-			} else if (option.equals("2")) {
-				shape = Triangle.fromStdin(scan);
-			} else if (option.equals("3")) {
-				shape = Circle.fromStdin(scan);
-			} else if (option.equals("0")) {
-				System.out.println("Has salido.");
-				break;
-			} else
+			try {
+				if (option.equals("1")) {				
+					shape = Square.fromStdin(scan);
+				} else if (option.equals("2")) {
+					shape = Triangle.fromStdin(scan);
+				} else if (option.equals("3")) {
+					shape = Circle.fromStdin(scan);
+				} else if (option.equals("0")) {
+					System.out.println("Has salido.");
+					break;
+				} else {
+					System.out.println("Opcion no existe.");
+					System.in.read();
+					scan.nextLine();
+					continue;
+				}
+			} catch (InputMismatchException e) {
+				System.out.println("No es una medida.");
+				System.in.read();
+				scan.nextLine();
 				continue;
-			
+			}
+
 			System.out.println();
-			System.out.println("Area: " + Double.toString(shape.getArea()) + " unidades\u00b2");
+			System.out.println("Area: " + Double.toString(shape.getArea()) + " unid\u00b2");
 			System.in.read();
+			scan.nextLine();
 		}
 
 	}

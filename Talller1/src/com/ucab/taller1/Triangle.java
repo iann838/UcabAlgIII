@@ -39,6 +39,7 @@ public final class Triangle extends Shape {
 		double width = scan.nextDouble();
 		System.out.print(">> Altura: ");
 		double height = scan.nextDouble();
+		scan.nextLine();
 		return new Triangle(width, height);
 	}
 

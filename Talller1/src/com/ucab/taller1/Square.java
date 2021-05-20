@@ -39,6 +39,7 @@ public final class Square extends Shape {
 		double width = scan.nextDouble();
 		System.out.print(">> Altura: ");
 		double height = scan.nextDouble();
+		scan.nextLine();
 		return new Square(width, height);
 	}
 
