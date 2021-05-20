@@ -15,13 +15,13 @@ public class Main {
 
 		while (true) {			
 			System.out.println();
-			System.out.println("1. Calculate the area of a square.");
-			System.out.println("2. Calculate the area of a triangle.");
-			System.out.println("3. Calculate the area of a circle.");
-			System.out.println("0. Get me out.");
+			System.out.println("1. Calcular el area de un cuadrado.");
+			System.out.println("2. Calcular el area de un triangulo.");
+			System.out.println("3. Calcular el area de un circulo.");
+			System.out.println("0. Salir.");
 			
 			System.out.println();
-			System.out.print(">> Option: ");
+			System.out.print(">> Opcion: ");
 			
 			String option = scan.nextLine();
 			System.out.println();
@@ -35,13 +35,13 @@ public class Main {
 			} else if (option.equals("3")) {
 				shape = Circle.fromStdin(scan);
 			} else if (option.equals("0")) {
-				System.out.println("You're out.");
+				System.out.println("Has salido.");
 				break;
 			} else
 				continue;
 			
 			System.out.println();
-			System.out.println("Area: " + Double.toString(shape.getArea()) + " unid\u00b2");
+			System.out.println("Area: " + Double.toString(shape.getArea()) + " unidades\u00b2");
 			System.in.read();
 		}
 

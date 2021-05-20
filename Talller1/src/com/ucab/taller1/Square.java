@@ -35,9 +35,9 @@ public final class Square extends Shape {
 	}
 
 	static Square fromStdin(Scanner scan) {
-		System.out.print(">> Width: ");
+		System.out.print(">> Base: ");
 		double width = scan.nextDouble();
-		System.out.print(">> Height: ");
+		System.out.print(">> Altura: ");
 		double height = scan.nextDouble();
 		return new Square(width, height);
 	}

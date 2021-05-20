@@ -25,7 +25,7 @@ public final class Circle extends Shape {
 	}
 
 	static Circle fromStdin(Scanner scan) {
-		System.out.print(">> Radius: ");
+		System.out.print(">> Radio: ");
 		double radius = scan.nextDouble();
 		return new Circle(radius);
 	}
