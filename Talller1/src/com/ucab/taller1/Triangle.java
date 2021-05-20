@@ -35,9 +35,9 @@ public final class Triangle extends Shape {
 	}
 
 	static Triangle fromStdin(Scanner scan) {
-		System.out.print(">> Width: ");
+		System.out.print(">> Base: ");
 		double width = scan.nextDouble();
-		System.out.print(">> Height: ");
+		System.out.print(">> Altura: ");
 		double height = scan.nextDouble();
 		return new Triangle(width, height);
 	}
