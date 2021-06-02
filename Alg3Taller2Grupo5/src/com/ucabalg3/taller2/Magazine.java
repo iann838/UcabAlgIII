@@ -40,7 +40,7 @@ public class Magazine extends Print {
 	public String toString() {
 		return String.format(
 			"La revista %s tiene %d paginas",
-			this.getId(), this.getPageNum()
+			this.getTitle(), this.getPageNum()
 		);
 	}
 
