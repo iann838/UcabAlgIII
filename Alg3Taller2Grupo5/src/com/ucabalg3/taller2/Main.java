@@ -26,7 +26,7 @@ public class Main {
 		
 		Scanner scan = new Scanner(System.in);
 		
-		Background background = new Background("data.json");
+		Background background = new Background();
 		ArrayList<Book> books = background.getBooks();
 		ArrayList<Magazine> magazines = background.getMagazines();
 
@@ -48,13 +48,11 @@ public class Main {
 				if (option.equals("1")) {
 					Book book = Book.fromStdin(scan);
 					books.add(book);
-					background.update();
 					System.out.println();
 					System.out.println(book.toString());
 				} else if (option.equals("2")) {
 					Magazine magazine = Magazine.fromStdin(scan);
 					magazines.add(magazine);
-					background.update();
 					System.out.println();
 					System.out.println(magazine.toString());
 				} else if (option.equals("3")) {
@@ -78,6 +76,9 @@ public class Main {
 					continue;
 				}
 			} catch (InputMismatchException | ParseException e) {
+				if (e instanceof InputMismatchException)
+					scan.nextLine();
+				System.out.println();
 				System.out.println("Entrada invalida.");
 				System.in.read();
 				scan.nextLine();

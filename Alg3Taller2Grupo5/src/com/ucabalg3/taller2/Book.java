@@ -56,16 +56,16 @@ public class Book extends Print {
 
 	public static String tableHead() {
 		return String.format(
-			"%16s|%30s|%30s|%12s\n%16s|%30s|%30s|%12s",
+			"%20s|%30s|%30s|%12s\n%20s|%30s|%30s|%12s",
 			"ISBN", "Titulo del Libro", "Autor del Libro", "Paginas",
-			"-".repeat(16), "-".repeat(30), "-".repeat(30), "-".repeat(12)
+			"-".repeat(20), "-".repeat(30), "-".repeat(30), "-".repeat(12)
 		);
 	}
 
 	@Override
 	public String tableRow() {
 		return String.format(
-			"%16s|%30s|%30s|%12d",
+			"%20s|%30s|%30s|%12d",
 			this.getIsbn(), this.getTitle(), this.getAuthor(), this.getPageNum()
 		);
 	}

@@ -19,5 +19,3 @@ Crear una clase Revista que maneja: nombre, número de revista, número de pági
 En el programa principal crear dos arreglos uno para libros y otro para revistas, donde la información será introducida por teclado, y luego mostrar el método to_string por cada libro. La información debe almacenarse en un archivo. El menú debe contar con opciones para mostrar la información de todos los libros y de todas las revistas. La información se debe mostrar en formato de tabla como el ejercicio 4.
 
 [Click to download](https://downgit.github.io/#/home?url=https://github.com/paaksing/UcabAlgIII/tree/master/Alg3Taller2Grupo5)
-
-External libraries required: [Gson](https://search.maven.org/remotecontent?filepath=com/google/code/gson/gson/2.8.7/gson-2.8.7.jar)
