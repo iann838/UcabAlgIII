@@ -43,11 +43,9 @@ public class Main {
 				if (option.equals("1")) {
 					CD cd = CD.fromStdin(scan);
 					cds.add(cd);
-					System.out.println("\n" + cd.toString());
 				} else if (option.equals("2")) {
 					DVD dvd = DVD.fromStdin(scan);
 					dvds.add(dvd);
-					System.out.println("\n" + dvd.toString());
 				} else if (option.equals("3")) {
 					System.out.println(CD.tableHead());
 					for (CD cd: cds)
