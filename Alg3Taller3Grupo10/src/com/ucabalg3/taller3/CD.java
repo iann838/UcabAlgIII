@@ -88,11 +88,11 @@ public class CD implements Media {
 	@Override
 	public String toString() {
 		return String.format(
-			"%s <title: %s | songNum: %d | duration: %s>",
+			"Creado %s <titulo: %s | duracion: %s | genero: %s>",
 			this.getClass().getName(),
 			this.getTitle(),
-			this.getSongNum(),
-			this.getDuration().toString()
+			this.getDuration().toString(),
+			this.getGenre()
 		);
 	}
 
@@ -136,7 +136,7 @@ public class CD implements Media {
 		
 		System.out.println();
 		ArrayList<Song> songs = new ArrayList<Song>(); 
-		for (int i = 0; i < songNum; i++) {
+		for (int i = 1; i <= songNum; i++) {
 			System.out.println(String.format("Cancion #%d", i));
 			songs.add(Song.fromStdin(scan));
 		}

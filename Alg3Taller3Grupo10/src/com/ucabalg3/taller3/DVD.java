@@ -67,10 +67,11 @@ public class DVD implements Media {
 	@Override
 	public String toString() {
 		return String.format(
-			"%s <title: %s | duration: %s>",
+			"Creado %s <titulo: %s | duracion: %s | genero: %s>",
 			this.getClass().getName(),
 			this.getTitle(),
-			this.getDuration().toString()
+			this.getDuration().toString(),
+			this.getGenre()
 		);
 	}
 
