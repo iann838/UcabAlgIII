@@ -19,3 +19,16 @@ Crear una clase Revista que maneja: nombre, número de revista, número de pági
 En el programa principal crear dos arreglos uno para libros y otro para revistas, donde la información será introducida por teclado, y luego mostrar el método to_string por cada libro. La información debe almacenarse en un archivo. El menú debe contar con opciones para mostrar la información de todos los libros y de todas las revistas. La información se debe mostrar en formato de tabla como el ejercicio 4.
 
 [Click to download](https://downgit.github.io/#/home?url=https://github.com/paaksing/UcabAlgIII/tree/master/Alg3Taller2Grupo5)
+
+### Taller 3
+
+Se desea desarrollar una aplicación que permita guardar información sobre discos de música (CD) y películas (DVD).
+
+ CD: título, artista, cantidad de canciones, tiempo de reproducción total, tiempo de reproducción por cada canción, titulo de cada canción, comentario, genero.
+ DVD: título, director, tiempo de reproducción, comentario, genero.
+ Se desea poder buscar información de todos los CD y de todos los DVD
+ Se desea buscar toda la información de todos los CD dado un género así como también de los DVD.
+ Debe haber una clase padre llamada: Medio. 
+ No se puede instanciar la clase padre y no se puede verificar que instancia es para mostrar la información.
+
+[Click to download](https://downgit.github.io/#/home?url=https://github.com/paaksing/UcabAlgIII/tree/master/Alg3Taller3Grupo10)
