@@ -87,7 +87,7 @@ public class Main {
 				scan.nextLine();
 				continue;
 			}
-
+			System.out.print("\nEnter para continuar ...");
 			System.in.read();
 			scan.nextLine();
 		}
