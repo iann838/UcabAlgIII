@@ -1,4 +1,4 @@
-package edu.ucab.cryptomonitor;
+package edu.ucab.cryptomonitor.deprecated;
 import java.io.File;
 
 public class Alert {

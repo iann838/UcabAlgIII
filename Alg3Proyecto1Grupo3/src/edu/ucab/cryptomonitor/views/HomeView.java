@@ -30,8 +30,10 @@ public class HomeView extends View {
 
             if (option.equals("1"))
                 return new Response(new TopCryptoView(), Status.REDIRECT);
-//            if (option.equals("2"))
-//                return new Response(new RegisterView(), Status.REDIRECT);
+            if (option.equals("2"))
+                return new Response(new BitcoinLiveView(), Status.REDIRECT);
+            if (option.equals("3"))
+                return new Response(new AlertMenuView(), Status.REDIRECT);
             if (option.equals("0")) {                
                 request.setUser(new User()); // Log out
                 return new Response(new MainView(), Status.REDIRECT);

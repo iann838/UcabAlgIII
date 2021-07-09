@@ -83,6 +83,7 @@ public class Database {
         List<Long> index = getIndex(path);
         if (index.contains(id)) {
             index.remove(id);
+            updateIndex(path, index);
         }
         File json = new File(parsePath(path, id));
         return json.delete();
@@ -94,7 +95,7 @@ public class Database {
         if (index.size() > 0) {
             id = index.get(index.size() - 1) + 1;
         } else {
-            id = 0;
+            id = 1;
         }
         o.setId(id);
         index.add(id);

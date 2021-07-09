@@ -1,13 +1,13 @@
 {
-  "rank": 3,
-  "tag": "USDT",
-  "name": "Tether",
-  "price": 0.99990923797087,
-  "marketCap": 6.220117674489204E10,
-  "volume24h": 5.2789268089196526E10,
-  "percentChange1h": 0.00797355,
-  "percentChange24h": -0.12728737,
-  "percentChange7d": -0.02779158,
-  "lastUpdated": "2021-07-08T21:35:12.000-0400",
+  "rank": 2,
+  "tag": "ETH",
+  "name": "Ethereum",
+  "price": 2163.156579842868,
+  "marketCap": 2.522840458657874E11,
+  "volume24h": 2.3147303377107925E10,
+  "percentChange1h": 0.55773521,
+  "percentChange24h": 2.50210975,
+  "percentChange7d": 0.54474116,
+  "lastUpdated": "2021-07-09T19:08:04.000-0400",
   "id": 2
 }

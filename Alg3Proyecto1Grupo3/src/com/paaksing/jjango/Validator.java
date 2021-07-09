@@ -75,9 +75,9 @@ public class Validator<M extends Manager<T>, T extends Model> {
     }
     
     public boolean securePassword(String string) throws InsecurePassword {
-        if (string.matches("^(?=.*[A-Za-z])(?=.*\\d)(?=.*[@$!%*#?&])[A-Za-z\\d@$!%*#?&]{8,}$"))
+        if (string.matches("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$"))
             return true;
-        throw new InsecurePassword(string);        
+        throw new InsecurePassword(string);
     }
 
 }

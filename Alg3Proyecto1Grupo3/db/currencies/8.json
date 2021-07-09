@@ -1,13 +1,13 @@
 {
-  "rank": 9,
-  "tag": "DOT",
-  "name": "Polkadot",
-  "price": 14.98198034945515,
-  "marketCap": 1.4366859643167068E10,
-  "volume24h": 1.0448597768960077E9,
-  "percentChange1h": -0.34687815,
-  "percentChange24h": -7.98901058,
-  "percentChange7d": -1.3755971,
-  "lastUpdated": "2021-07-08T21:36:07.000-0400",
+  "rank": 8,
+  "tag": "USDC",
+  "name": "USD Coin",
+  "price": 1.00007752923598,
+  "marketCap": 2.60864461184588E10,
+  "volume24h": 1.9423269475336404E9,
+  "percentChange1h": -0.00798647,
+  "percentChange24h": 0.02569174,
+  "percentChange7d": -0.01600743,
+  "lastUpdated": "2021-07-09T19:08:06.000-0400",
   "id": 8
 }

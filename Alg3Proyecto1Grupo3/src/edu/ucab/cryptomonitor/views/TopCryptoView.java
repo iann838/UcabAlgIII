@@ -1,6 +1,8 @@
 package edu.ucab.cryptomonitor.views;
 
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
@@ -27,9 +29,10 @@ public class TopCryptoView extends View {
     @Override
     public Response dispatch(Request request) throws IOException {
         Scanner scan = request.getScanner();
+        DateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
+
         Date minuteAgo = new Date(System.currentTimeMillis() - 300 * 1000);;
         List<Currency> currencies = Currency.objects.all();
-
         if (currencies.isEmpty() || currencies.get(0).getLastUpdated().before(minuteAgo)) {
             try {
                 CmcAPI.updateLatestCurrencies();
@@ -46,7 +49,7 @@ public class TopCryptoView extends View {
 
         System.out.println(String.format("*** Monitor de Bitcoin | Top 10 Criptomonedas (@%s) ***", request.getUser().getUsername()));
         System.out.println(String.format(
-            "%5s  %5s  %15s  %10s  %7s  %7s  %7s  %15s",
+            "%5s  %5s  %15s  %10s  %7s  %7s  %7s  %15s  %15s  %25s",
             "Rank",
             "Etiq",
             "Nombre",
@@ -54,11 +57,13 @@ public class TopCryptoView extends View {
             "1h %",
             "24h %",
             "7d %",
-            "Market Cap"
+            "Volume 24h",
+            "Market Cap",
+            "Actualizacion"
         ));
         for (Currency currency: currencies) {
             System.out.println(String.format(
-                "%5d  %5s  %15s  %10.2f  %7.2f  %7.2f  %7.2f  %15.0f",
+                "%5d  %5s  %15s  %10.2f  %7.2f  %7.2f  %7.2f  %15.0f  %15.0f  %25s",
                 currency.getRank(),
                 currency.getTag(),
                 currency.getName(),
@@ -66,7 +71,9 @@ public class TopCryptoView extends View {
                 currency.getPercentChange1h(),
                 currency.getPercentChange24h(),
                 currency.getPercentChange7d(),
-                currency.getMarketCap()
+                currency.getVolume24h(),
+                currency.getMarketCap(),
+                df.format(currency.getLastUpdated())
             ));
         }
 

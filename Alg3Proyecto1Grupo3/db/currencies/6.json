@@ -1,13 +1,13 @@
 {
-  "rank": 7,
-  "tag": "DOGE",
-  "name": "Dogecoin",
-  "price": 0.19924826010352,
-  "marketCap": 2.597373835801267E10,
-  "volume24h": 1.7654731277789774E9,
-  "percentChange1h": -0.90826214,
-  "percentChange24h": -8.53717319,
-  "percentChange7d": -18.08079234,
-  "lastUpdated": "2021-07-08T21:35:18.000-0400",
+  "rank": 6,
+  "tag": "XRP",
+  "name": "XRP",
+  "price": 0.63997778006863,
+  "marketCap": 2.9548935970708874E10,
+  "volume24h": 2.3940503652270465E9,
+  "percentChange1h": 0.7668469,
+  "percentChange24h": 3.62159922,
+  "percentChange7d": -1.67059311,
+  "lastUpdated": "2021-07-09T19:08:03.000-0400",
   "id": 6
 }

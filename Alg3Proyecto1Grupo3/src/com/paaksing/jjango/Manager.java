@@ -26,7 +26,7 @@ public class Manager<T extends Model> {
         validator = new Validator<Manager<T>, T>(this);
     }
 
-    public T get(int id) throws ObjectDoesNotExist, IOException {
+    public T get(long id) throws ObjectDoesNotExist, IOException {
         BufferedReader buffer = Database.get(path, id);
         T object = gson.fromJson(buffer, owner);
         buffer.close();

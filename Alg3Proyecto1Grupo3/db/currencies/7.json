@@ -1,13 +1,13 @@
 {
-  "rank": 8,
-  "tag": "USDC",
-  "name": "USD Coin",
-  "price": 0.99987976576558,
-  "marketCap": 2.593446537177979E10,
-  "volume24h": 2.2526007173546567E9,
-  "percentChange1h": 0.00224671,
-  "percentChange24h": -0.10579217,
-  "percentChange7d": -0.02747238,
-  "lastUpdated": "2021-07-08T21:36:05.000-0400",
+  "rank": 7,
+  "tag": "DOGE",
+  "name": "Dogecoin",
+  "price": 0.22094194545252,
+  "marketCap": 2.880407070712559E10,
+  "volume24h": 3.0543245529208684E9,
+  "percentChange1h": -0.05970473,
+  "percentChange24h": 7.66349889,
+  "percentChange7d": -9.70018664,
+  "lastUpdated": "2021-07-09T19:07:20.000-0400",
   "id": 7
 }

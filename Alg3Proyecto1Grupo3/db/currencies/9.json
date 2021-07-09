@@ -1,13 +1,13 @@
 {
-  "rank": 10,
-  "tag": "UNI",
-  "name": "Uniswap",
-  "price": 20.04124099604037,
-  "marketCap": 1.176973690738236E10,
-  "volume24h": 4.9059834330693924E8,
-  "percentChange1h": 0.02647358,
-  "percentChange24h": -8.12126413,
-  "percentChange7d": 12.69199662,
-  "lastUpdated": "2021-07-08T21:35:12.000-0400",
+  "rank": 9,
+  "tag": "DOT",
+  "name": "Polkadot",
+  "price": 15.78447433791587,
+  "marketCap": 1.5141624645677744E10,
+  "volume24h": 8.160791846376623E8,
+  "percentChange1h": 0.48558902,
+  "percentChange24h": 4.20918946,
+  "percentChange7d": 3.11009028,
+  "lastUpdated": "2021-07-09T19:07:09.000-0400",
   "id": 9
 }

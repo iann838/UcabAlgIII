@@ -13,6 +13,7 @@ public class App {
         Request request = new Request(new User(), new Scanner(System.in));
         View currentView = new MainView();
         while (true) {
+//            clearConsole();
             Response response = currentView.dispatch(request);
             if (response.getStatus() == Status.REDIRECT)
                 currentView = response.getView();
@@ -20,6 +21,26 @@ public class App {
                 break;
         }
 
+    }
+    
+    public static void clearConsole() {
+        try {
+            String operatingSystem = System.getProperty("os.name"); //Check the current operating system
+              
+            if(operatingSystem.contains("Windows")){        
+                ProcessBuilder pb = new ProcessBuilder("cmd", "/c", "cls");
+                Process ps;
+                ps = pb.inheritIO().start();
+                ps.waitFor();
+            } else {
+                ProcessBuilder pb = new ProcessBuilder("clear");
+                Process ps;
+                ps = pb.inheritIO().start();
+                ps.waitFor();
+            } 
+        } catch(Exception e) {
+            System.out.println(e);
+        }
     }
 
 }

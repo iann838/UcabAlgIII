@@ -58,11 +58,7 @@ public class User extends Model {
 			e.printStackTrace();
 			throw new ValidationError("Could not connect to db");
 		}
-	}
-
-	public long save() throws ValidationError {
 		this.setPassword(Auth.makePassword(this.getPassword()));
-		return super.save();
 	}
 
 	/* Getters and Setters */
