@@ -1,4 +1,4 @@
-package com.paaksing.java.django;
+package com.paaksing.jjango;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -17,7 +17,10 @@ import com.google.gson.reflect.TypeToken;
 
 public class Database {
 
-    private static Gson gson = new GsonBuilder().setPrettyPrinting().create();
+    private static Gson gson = new GsonBuilder()
+            .setPrettyPrinting()
+            .setDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZ")
+            .create();
 
     @SuppressWarnings("serial")
     public static class ObjectDoesNotExist extends Exception { 
@@ -26,19 +29,19 @@ public class Database {
         }
     }
 
-    private static String parsePath(String path, int id) {
-        return path + "/" + Integer.toString(id) + ".json";
+    private static String parsePath(String path, long id) {
+        return path + "/" + Long.toString(id) + ".json";
     }
 
-    private static void updateIndex(String path, List<Integer> index) throws IOException {
-        index.sort(Integer::compare);
+    private static void updateIndex(String path, List<Long> index) throws IOException {
+        index.sort(Long::compare);
         Files.createDirectories(Paths.get(path));
         FileWriter writer = new FileWriter(path + "/index.json");
         gson.toJson(index, writer);
         writer.flush();
     }
 
-    private static List<Integer> getIndex(String path) throws IOException {
+    private static List<Long> getIndex(String path) throws IOException {
         File json = new File(path + "/index.json");
         Files.createDirectories(Paths.get(path));
         if (!json.exists()) {
@@ -49,23 +52,23 @@ public class Database {
             writer.close();
         }
         BufferedReader bufferedReader = new BufferedReader(new FileReader(path + "/index.json"));
-        Type ListInteger = new TypeToken<ArrayList<Integer>>(){}.getType();
-        List<Integer> index = gson.fromJson(bufferedReader, ListInteger);
+        Type ListInteger = new TypeToken<ArrayList<Long>>(){}.getType();
+        List<Long> index = gson.fromJson(bufferedReader, ListInteger);
         bufferedReader.close();
         return index;
     }
 
-    public static BufferedReader get(String path, int id) throws ObjectDoesNotExist, IOException {
-        List<Integer> index = getIndex(path);
+    public static BufferedReader get(String path, long id) throws ObjectDoesNotExist, IOException {
+        List<Long> index = getIndex(path);
         if (!index.contains(id)) {
-            throw new ObjectDoesNotExist("id: " + Integer.toString(id));
+            throw new ObjectDoesNotExist("id: " + Long.toString(id));
         }
         return new BufferedReader(new FileReader(parsePath(path, id)));
     }
 
-    public static int put(String path, int id, Model o) { try {
-        List<Integer> index = getIndex(path);
-        o.id = id;
+    public static long put(String path, long id, Model o) { try {
+        List<Long> index = getIndex(path);
+        o.setId(id);
         if (!index.contains(id)) {
             index.add(id);
             updateIndex(path, index);
@@ -76,15 +79,24 @@ public class Database {
         return id;
     } catch ( Exception e ) { throw new RuntimeException( e ); } }
 
-    public static <T extends Model> int create(String path, T o) { try {
-        List<Integer> index = getIndex(path);
-        int id;
+    public static boolean delete(String path, long id) throws IOException {
+        List<Long> index = getIndex(path);
+        if (index.contains(id)) {
+            index.remove(id);
+        }
+        File json = new File(parsePath(path, id));
+        return json.delete();
+    }
+
+    public static <T extends Model> long create(String path, T o) { try {
+        List<Long> index = getIndex(path);
+        long id;
         if (index.size() > 0) {
             id = index.get(index.size() - 1) + 1;
         } else {
             id = 0;
         }
-        o.id = id;
+        o.setId(id);
         index.add(id);
         updateIndex(path, index);
         FileWriter writer = new FileWriter(parsePath(path, id));
@@ -94,9 +106,9 @@ public class Database {
     } catch ( Exception e ) { throw new RuntimeException( e ); } }
 
     public static List<BufferedReader> all(String path) throws IOException {
-        List<Integer> index = getIndex(path);
+        List<Long> index = getIndex(path);
         List<BufferedReader> buffers = new ArrayList<BufferedReader>();
-        for (int id: index) {
+        for (long id: index) {
             try {
                 buffers.add(get(path, id));
             } catch (ObjectDoesNotExist e) { }

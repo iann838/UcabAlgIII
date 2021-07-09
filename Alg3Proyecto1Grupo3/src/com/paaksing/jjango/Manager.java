@@ -1,4 +1,4 @@
-package com.paaksing.java.django;
+package com.paaksing.jjango;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,13 +7,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.google.gson.Gson;
-import com.paaksing.java.django.Database.ObjectDoesNotExist;
+import com.google.gson.GsonBuilder;
+import com.paaksing.jjango.Database.ObjectDoesNotExist;
 
 public class Manager<T extends Model> {
 
     private String path;
     private Class<T> owner;
-    private Gson gson = new Gson();
+    private static Gson gson = new GsonBuilder()
+            .setPrettyPrinting()
+            .setDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZ")
+            .create();
     public Validator<Manager<T>, T> validator;
 
     public Manager(String dir, Class<T> classOfT) {
@@ -72,13 +76,26 @@ public class Manager<T extends Model> {
         }
         return filtered;
     }
+    
+    public long create(T o) {
+        return Database.create(path, o);
+    }
 
-    public int put(int id, T o) {
+    public long put(long id, T o) {
         return Database.put(path, id, o);
     }
 
-    public int create(T o) {
-        return Database.create(path, o);
+    public boolean delete(long id) throws IOException {
+        return Database.delete(path, id);
+    }
+    
+    public boolean drop() throws IOException {
+        boolean allDeleted = true;
+        for (T o: this.all()) {            
+            if (!Database.delete(path, o.getId()))
+                allDeleted = false;
+        }
+        return allDeleted;
     }
 
 }

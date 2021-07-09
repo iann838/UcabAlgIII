@@ -1,4 +1,5 @@
-package com.paaksing.java.django;
+package com.paaksing.jjango;
+
 
 import java.io.IOException;
 import java.lang.reflect.Field;
@@ -27,6 +28,20 @@ public class Validator<M extends Manager<T>, T extends Model> {
         }
     }
 
+    @SuppressWarnings("serial")
+    public static class InvalidEmail extends ValidationError {
+        public InvalidEmail(String errorMessage) {
+            super(errorMessage);
+        }
+    }
+
+    @SuppressWarnings("serial")
+    public static class InsecurePassword extends ValidationError {
+        public InsecurePassword(String errorMessage) {
+            super(errorMessage);
+        }
+    }
+
     private M owner;
 
     public Validator(M classOfT) {
@@ -45,7 +60,7 @@ public class Validator<M extends Manager<T>, T extends Model> {
                 Field f = c.getDeclaredField(key);
                 f.setAccessible(true);
                 E foundValue = (E) f.get(object);
-                if (instance.id == object.id && (foundValue == value || foundValue.equals(value)))
+                if (instance.getId() == object.getId() && (foundValue == value || foundValue.equals(value)))
                     return true;
             } catch (Exception e) { }
             throw new UniqueConstraintFailed(owner, key, value);
@@ -53,9 +68,16 @@ public class Validator<M extends Manager<T>, T extends Model> {
         return true;
     }
 
-    public boolean email(String string) throws RegexMissmatch {
+    public boolean email(String string) throws InvalidEmail {
         if (string.matches("(\\w+)(\\.|_)?(\\w*)@(\\w+)(\\.(\\w+))+"))
             return true;
-        throw new RegexMissmatch(string);
+        throw new InvalidEmail(string);
     }
+    
+    public boolean securePassword(String string) throws InsecurePassword {
+        if (string.matches("^(?=.*[A-Za-z])(?=.*\\d)(?=.*[@$!%*#?&])[A-Za-z\\d@$!%*#?&]{8,}$"))
+            return true;
+        throw new InsecurePassword(string);        
+    }
+
 }
