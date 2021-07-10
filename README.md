@@ -32,3 +32,19 @@ Se desea desarrollar una aplicación que permita guardar información sobre disc
  No se puede instanciar la clase padre y no se puede verificar que instancia es para mostrar la información.
 
 [Click to download](https://downgit.github.io/#/home?url=https://github.com/paaksing/UcabAlgIII/tree/master/Alg3Taller3Grupo10)
+
+### Taller 5
+
+Una compañía de refrescos comercializa tres productos: de cola, de naranja y de limón. Cada producto tiene nombre, fecha de creación, fecha de caducidad, precio de venta, cantidad vendida. El refresco de cola tiene un descuento de 10% si la compra supera los 1000 productos y cantidad de colorante en porcentaje, el refresco de Naranja tiene descuento de 5% si supera las 1000 unidades, y cantidad de calorías, el de limón se debe indicar la cantidad de limón en ml (mililitros) que se utiliza por refresco y el descuento es del 2.5% por 500 unidades. Se desea realizar un programa que calcule las ventas realizadas de cada producto tanto en $ como en Bs e indicar el total en $ y Bs por empresa (la empresa es el cliente que compra los refrescos para revender). Para ello, se debe leer: el nombre del comercio, la cantidad vendida por artículo, el precio por unidad de cada artículo y la tasa de conversión de $ a Bs.
+
+El programa debe presentar una opción para indicar: la cantidad de colorante en % (si es cola), cantidad de calorías (si es naranja), cantidad de limón (si es de limón).
+La aplicación debe poder mostrar:
+•	La tabla anterior que muestra toda la información.
+•	Poder ver la información detallada por cada empresa y productos vendidos
+•	puede ver la información.
+•	La información por refresco mostrando la información detallada del refresco ya sea cantidad de colorante, calorías o de limón en función del refresco.
+Recuerde no puede instancias a la clase producto (padre) así como tampoco verificar que tipo de instancia es para mostrar la información.
+
+**Requires: [Gson](https://search.maven.org/artifact/com.google.code.gson/gson/2.8.7/jar)**
+
+[Click to download](https://downgit.github.io/#/home?url=https://github.com/paaksing/UcabAlgIII/tree/master/Alg3Taller5Grupo8)
