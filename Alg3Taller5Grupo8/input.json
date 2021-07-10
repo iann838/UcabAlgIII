@@ -1,0 +1,74 @@
+{
+    "companies": [
+        {
+            "name": "UNICASA",
+            "drinks": [
+                {
+                    "type": "coke",
+                    "name": "Pepsi Cola",
+                    "creation": "2021-07-09T19:08:04.000-0400",
+                    "expiration": "2022-07-09T19:08:04.000-0400",
+                    "price": 0.99,
+                    "amountSold": 2000,
+                    "colorantPercent": 1
+                },
+                {
+                    "type": "orange",
+                    "name": "Nestea Naranja",
+                    "creation": "2021-07-08T19:08:04.000-0400",
+                    "expiration": "2022-07-08T19:08:04.000-0400",
+                    "price": 0.75,
+                    "amountSold": 700,
+                    "calories": 200
+                },
+                {
+                    "type": "lemon",
+                    "name": "Liptont",
+                    "creation": "2021-07-09T09:08:04.000-0400",
+                    "expiration": "2022-01-09T09:08:04.000-0400",
+                    "price": 1.5,
+                    "amountSold": 900,
+                    "lemonMl": 100
+                }
+            ]
+        },
+        {
+            "name": "El Plaza",
+            "drinks": [
+                {
+                    "type": "coke",
+                    "name": "Pepsi Cola",
+                    "creation": "2021-07-09T19:08:04.000-0400",
+                    "expiration": "2022-07-09T19:08:04.000-0400",
+                    "price": 0.99,
+                    "amountSold": 800,
+                    "colorantPercent": 1
+                },
+                {
+                    "type": "orange",
+                    "name": "Nestea Naranja",
+                    "creation": "2021-07-08T19:08:04.000-0400",
+                    "expiration": "2022-07-08T19:08:04.000-0400",
+                    "price": 0.75,
+                    "amountSold": 1200,
+                    "calories": 200
+                }
+            ]
+        },
+        {
+            "name": "Central Madeirense",
+            "drinks": [
+                {
+                    "type": "lemon",
+                    "name": "Liptont",
+                    "creation": "2021-07-09T09:08:04.000-0400",
+                    "expiration": "2022-01-09T09:08:04.000-0400",
+                    "price": 1.5,
+                    "amountSold": 300,
+                    "lemonMl": 250
+                }
+            ]
+        }
+    ],
+    "exchangeRateVES": 3300575.23
+}

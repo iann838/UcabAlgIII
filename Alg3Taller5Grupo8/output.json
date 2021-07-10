@@ -1,0 +1,98 @@
+{
+    "companies": [
+        {
+            "name": "UNICASA",
+            "drinks": [
+                {
+                    "discountPercent": 10.0,
+                    "discountApplicableThreshold": 1000.0,
+                    "colorantPercent": 1.0,
+                    "name": "Pepsi Cola",
+                    "creation": "2021-07-09T19:08:04.000-0400",
+                    "expiration": "2022-07-09T19:08:04.000-0400",
+                    "price": 0.99,
+                    "amountSold": 2000,
+                    "subTotal": 1782.0,
+                    "subTotalVES": 5.88162505986E9
+                },
+                {
+                    "discountPercent": 5.0,
+                    "discountApplicableThreshold": 1000.0,
+                    "calories": 200,
+                    "name": "Nestea Naranja",
+                    "creation": "2021-07-08T19:08:04.000-0400",
+                    "expiration": "2022-07-08T19:08:04.000-0400",
+                    "price": 0.75,
+                    "amountSold": 700,
+                    "subTotal": 525.0,
+                    "subTotalVES": 1.73280199575E9
+                },
+                {
+                    "discountPercent": 2.5,
+                    "discountApplicableThreshold": 500.0,
+                    "lemonMl": 100,
+                    "name": "Liptont",
+                    "creation": "2021-07-09T09:08:04.000-0400",
+                    "expiration": "2022-01-09T09:08:04.000-0400",
+                    "price": 1.5,
+                    "amountSold": 900,
+                    "subTotal": 1316.25,
+                    "subTotalVES": 4.3443821464875E9
+                }
+            ],
+            "total": 3623.25,
+            "totalVES": 1.19588092020975E10
+        },
+        {
+            "name": "El Plaza",
+            "drinks": [
+                {
+                    "discountPercent": 10.0,
+                    "discountApplicableThreshold": 1000.0,
+                    "colorantPercent": 1.0,
+                    "name": "Pepsi Cola",
+                    "creation": "2021-07-09T19:08:04.000-0400",
+                    "expiration": "2022-07-09T19:08:04.000-0400",
+                    "price": 0.99,
+                    "amountSold": 800,
+                    "subTotal": 792.0,
+                    "subTotalVES": 2.61405558216E9
+                },
+                {
+                    "discountPercent": 5.0,
+                    "discountApplicableThreshold": 1000.0,
+                    "calories": 200,
+                    "name": "Nestea Naranja",
+                    "creation": "2021-07-08T19:08:04.000-0400",
+                    "expiration": "2022-07-08T19:08:04.000-0400",
+                    "price": 0.75,
+                    "amountSold": 1200,
+                    "subTotal": 855.0,
+                    "subTotalVES": 2.82199182165E9
+                }
+            ],
+            "total": 1647.0,
+            "totalVES": 5.436047403809999E9
+        },
+        {
+            "name": "Central Madeirense",
+            "drinks": [
+                {
+                    "discountPercent": 2.5,
+                    "discountApplicableThreshold": 500.0,
+                    "lemonMl": 250,
+                    "name": "Liptont",
+                    "creation": "2021-07-09T09:08:04.000-0400",
+                    "expiration": "2022-01-09T09:08:04.000-0400",
+                    "price": 1.5,
+                    "amountSold": 300,
+                    "subTotal": 450.0,
+                    "subTotalVES": 1.4852588535E9
+                }
+            ],
+            "total": 450.0,
+            "totalVES": 1.4852588535E9
+        }
+    ],
+    "exchangeRateVES": 3300575.23
+}
