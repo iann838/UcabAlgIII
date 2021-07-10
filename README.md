@@ -48,3 +48,12 @@ Recuerde no puede instancias a la clase producto (padre) así como tampoco verif
 **Requires: [Gson](https://search.maven.org/artifact/com.google.code.gson/gson/2.8.7/jar)**
 
 [Click to download](https://downgit.github.io/#/home?url=https://github.com/paaksing/UcabAlgIII/tree/master/Alg3Taller5Grupo8)
+
+
+### Proyecto 1
+
+Description in [file](assignments/Proyecto-Monitor_Bitcoin-version-1_(1).pdf).
+
+**Requires: [Gson](https://search.maven.org/artifact/com.google.code.gson/gson/2.8.7/jar), [ApacheHTTP](https://jar-download.com/artifact-search/httpclient)**
+
+[Click to download](https://downgit.github.io/#/home?url=https://github.com/paaksing/UcabAlgIII/tree/master/Alg3Proyecto1Grupo3)
