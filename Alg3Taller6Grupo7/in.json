@@ -1,0 +1,30 @@
+[
+    {
+        "type": "circle",
+        "radius": 3
+    },
+    {
+        "type": "circle",
+        "radius": 6.125
+    },
+    {
+        "type": "square",
+        "width": 10,
+        "height": 20
+    },
+    {
+        "type": "square",
+        "width": 1.53,
+        "height": 6.32
+    },
+    {
+        "type": "triangle",
+        "width": 10,
+        "height": 20
+    },
+    {
+        "type": "triangle",
+        "width": 5.5,
+        "height": 2.1
+    }
+]

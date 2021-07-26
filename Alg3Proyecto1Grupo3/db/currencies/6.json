@@ -1,13 +1,13 @@
 {
   "rank": 6,
-  "tag": "XRP",
-  "name": "XRP",
-  "price": 0.63466903067421,
-  "marketCap": 2.9303821373256077E10,
-  "volume24h": 2.2566924188122787E9,
-  "percentChange1h": -0.61378439,
-  "percentChange24h": 4.40306046,
-  "percentChange7d": -2.32325825,
-  "lastUpdated": "2021-07-09T22:36:02.000-0400",
+  "tag": "USDC",
+  "name": "USD Coin",
+  "price": 1.00033980688276,
+  "marketCap": 2.670713495127376E10,
+  "volume24h": 1.9098934550517294E9,
+  "percentChange1h": 0.00728461,
+  "percentChange24h": -0.01035298,
+  "percentChange7d": 0.00524881,
+  "lastUpdated": "2021-07-19T16:27:04.000-0400",
   "id": 6
 }

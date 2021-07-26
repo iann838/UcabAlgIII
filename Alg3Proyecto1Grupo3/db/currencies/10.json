@@ -1,13 +1,13 @@
 {
   "rank": 10,
-  "tag": "UNI",
-  "name": "Uniswap",
-  "price": 20.8607691926536,
-  "marketCap": 1.2251118883926214E10,
-  "volume24h": 4.172848237846825E8,
-  "percentChange1h": -1.04407775,
-  "percentChange24h": 2.66772099,
-  "percentChange7d": 15.29738392,
-  "lastUpdated": "2021-07-09T22:35:46.000-0400",
+  "tag": "BUSD",
+  "name": "Binance USD",
+  "price": 1.00022781466631,
+  "marketCap": 1.1121547838948227E10,
+  "volume24h": 3.147043798840334E9,
+  "percentChange1h": 0.00655089,
+  "percentChange24h": -0.02018546,
+  "percentChange7d": -0.00296263,
+  "lastUpdated": "2021-07-19T16:27:06.000-0400",
   "id": 10
 }

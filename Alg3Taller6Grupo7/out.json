@@ -1,0 +1,36 @@
+[
+    {
+        "radius": 3.0,
+        "type": "circle",
+        "area": 28.274333882308138
+    },
+    {
+        "radius": 6.125,
+        "type": "circle",
+        "area": 117.85881189482959
+    },
+    {
+        "width": 10.0,
+        "height": 20.0,
+        "type": "square",
+        "area": 200.0
+    },
+    {
+        "width": 1.53,
+        "height": 6.32,
+        "type": "square",
+        "area": 9.6696
+    },
+    {
+        "width": 10.0,
+        "height": 20.0,
+        "type": "triangle",
+        "area": 100.0
+    },
+    {
+        "width": 5.5,
+        "height": 2.1,
+        "type": "triangle",
+        "area": 5.775
+    }
+]
