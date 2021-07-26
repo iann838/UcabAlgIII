@@ -49,7 +49,6 @@ Recuerde no puede instancias a la clase producto (padre) así como tampoco verif
 
 [Click to download](https://downgit.github.io/#/home?url=https://github.com/paaksing/UcabAlgIII/tree/master/Alg3Taller5Grupo8)
 
-
 ### Proyecto 1
 
 Description in [file](assignments/Proyecto-Monitor_Bitcoin-version-1_(1).pdf).
@@ -57,3 +56,11 @@ Description in [file](assignments/Proyecto-Monitor_Bitcoin-version-1_(1).pdf).
 **Requires: [Gson](https://search.maven.org/artifact/com.google.code.gson/gson/2.8.7/jar), [ApacheHTTP](https://jar-download.com/artifact-search/httpclient)**
 
 [Click to download](https://downgit.github.io/#/home?url=https://github.com/paaksing/UcabAlgIII/tree/master/Alg3Proyecto1Grupo3)
+
+### Taller 6
+
+Implemente las clases Circulo, triangulo, cuadrado que represente la información de una clase general llamada FiguraGeometrica, solicite al usuario la información de la respectiva figura que desea almacenar, calcular el área. No puede instanciar la clase FiguraGeometrica y no se puede verificar que instancia tiene.
+
+**Requires: [Gson](https://search.maven.org/artifact/com.google.code.gson/gson/2.8.7/jar)**
+
+[Click to download](https://downgit.github.io/#/home?url=https://github.com/paaksing/UcabAlgIII/tree/master/Alg3Taller6Grupo7)
