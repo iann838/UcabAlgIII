@@ -330,8 +330,8 @@ public class TradeView extends View implements ActionListener {
                     JOptionPane.showMessageDialog(this, "Saldo insuficiente.");
                     return;
                 }
+                currencyBalance.setUsdtInversion(currencyBalance.getUsdtInversion() - (amountCurrency / currencyBalance.getBalance()) * currencyBalance.getUsdtInversion());
                 currencyBalance.setBalance(currencyBalance.getBalance() - amountCurrency);
-                currencyBalance.setUsdtInversion(currencyBalance.getUsdtInversion() - amountUSDT);
                 currencyBalance.save();
                 this.lblCurrencyBalance.setText(Double.toString(currencyBalance.getBalance()));
                 USDTBalance.setBalance(USDTBalance.getBalance() + amountUSDT);
