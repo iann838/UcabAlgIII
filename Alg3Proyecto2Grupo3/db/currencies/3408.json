@@ -1,0 +1,20 @@
+{
+  "rank": 8,
+  "tag": "USDC",
+  "name": "USD Coin",
+  "price": 0.999754603761556,
+  "price1hpc": 0.003778683661,
+  "price24hpc": -0.002984245611,
+  "price7dpc": -0.032434097056,
+  "price30dpc": -0.122124566978,
+  "volume": 2.895107061650927E9,
+  "volume24hpc": -9.148038581328,
+  "totalSupply": 2.755887059706757E10,
+  "marketCap": 2.7552107753887283E10,
+  "marketCap24hpc": -0.197327221679,
+  "circulatingSupply": 2.755887059706757E10,
+  "fullyDilutedMarketCap": 0.0,
+  "fullyDilutedMarketCap24hpc": -0.002984245611,
+  "lastUpdated": "2021-08-06T23:37:20.987-0400",
+  "id": 3408
+}

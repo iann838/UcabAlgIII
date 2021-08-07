@@ -1,0 +1,20 @@
+{
+  "rank": 44,
+  "tag": "AVAX",
+  "name": "Avalanche",
+  "price": 15.244821472086475,
+  "price1hpc": -0.411116311624,
+  "price24hpc": 12.035977683828,
+  "price7dpc": 18.447370144248,
+  "price30dpc": 20.936693232664,
+  "volume": 1.1690884381204124E8,
+  "volume24hpc": 62.49890799918,
+  "totalSupply": 3.8700119539287555E8,
+  "marketCap": 2.6449347095153356E9,
+  "marketCap24hpc": 12.037088489387,
+  "circulatingSupply": 1.7349725704287556E8,
+  "fullyDilutedMarketCap": 1.0976271459902262E10,
+  "fullyDilutedMarketCap24hpc": 12.035977683828,
+  "lastUpdated": "2021-08-06T23:37:33.700-0400",
+  "id": 5805
+}

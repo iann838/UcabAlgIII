@@ -1,0 +1,20 @@
+{
+  "rank": 31,
+  "tag": "CAKE",
+  "name": "PancakeSwap",
+  "price": 18.400436233432114,
+  "price1hpc": -0.402302200516,
+  "price24hpc": 6.659110091476,
+  "price7dpc": 21.491680782763,
+  "price30dpc": 21.95226773843,
+  "volume": 4.123366954996867E8,
+  "volume24hpc": -2.420966095749,
+  "totalSupply": 2.0625067154764852E8,
+  "marketCap": 3.795102329915057E9,
+  "marketCap24hpc": 6.922824566133,
+  "circulatingSupply": 2.0625067154764852E8,
+  "fullyDilutedMarketCap": 0.0,
+  "fullyDilutedMarketCap24hpc": 6.659110091476,
+  "lastUpdated": "2021-08-06T23:37:28.154-0400",
+  "id": 7186
+}

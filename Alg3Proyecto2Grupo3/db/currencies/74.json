@@ -1,0 +1,20 @@
+{
+  "rank": 7,
+  "tag": "DOGE",
+  "name": "Dogecoin",
+  "price": 0.21228332405249606,
+  "price1hpc": 0.813334803524,
+  "price24hpc": 6.182380571695,
+  "price7dpc": 1.595986979278,
+  "price30dpc": -4.042141756281,
+  "volume": 1.5490567489071321E9,
+  "volume24hpc": 38.847138702001,
+  "totalSupply": 1.3075798613666714E11,
+  "marketCap": 2.77577399435019E10,
+  "marketCap24hpc": 6.193586150585,
+  "circulatingSupply": 1.3075798613666714E11,
+  "fullyDilutedMarketCap": 0.0,
+  "fullyDilutedMarketCap24hpc": 6.182380571695,
+  "lastUpdated": "2021-08-06T23:37:21.236-0400",
+  "id": 74
+}

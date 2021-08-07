@@ -1,0 +1,20 @@
+{
+  "rank": 38,
+  "tag": "ATOM",
+  "name": "Cosmos",
+  "price": 13.784151469068252,
+  "price1hpc": -0.348647037173,
+  "price24hpc": 7.450451898726,
+  "price7dpc": 14.057422397894,
+  "price30dpc": 11.236518046032,
+  "volume": 2.2530985195290422E8,
+  "volume24hpc": 33.675882333164,
+  "totalSupply": 2.77115278963722E8,
+  "marketCap": 3.0232872592970715E9,
+  "marketCap24hpc": 7.477121372399,
+  "circulatingSupply": 2.19330675963722E8,
+  "fullyDilutedMarketCap": 0.0,
+  "fullyDilutedMarketCap24hpc": 7.450451898726,
+  "lastUpdated": "2021-08-06T23:37:31.048-0400",
+  "id": 3794
+}

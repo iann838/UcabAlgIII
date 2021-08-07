@@ -1,0 +1,20 @@
+{
+  "rank": 25,
+  "tag": "DAI",
+  "name": "Dai",
+  "price": 1.0013996885967138,
+  "price1hpc": 0.027755847914,
+  "price24hpc": 0.056219420123,
+  "price7dpc": -1.94359765E-4,
+  "price30dpc": 0.047139319101,
+  "volume": 5.302934762856988E8,
+  "volume24hpc": -8.121039877194,
+  "totalSupply": 5.705048197493611E9,
+  "marketCap": 5.7130329988759775E9,
+  "marketCap24hpc": 0.308736301328,
+  "circulatingSupply": 5.705047708654466E9,
+  "fullyDilutedMarketCap": 0.0,
+  "fullyDilutedMarketCap24hpc": 0.056219420123,
+  "lastUpdated": "2021-08-06T23:37:25.245-0400",
+  "id": 4943
+}

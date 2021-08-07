@@ -1,0 +1,20 @@
+{
+  "rank": 33,
+  "tag": "CRO",
+  "name": "Crypto.com Coin",
+  "price": 0.1324151189876555,
+  "price1hpc": -0.370982293927,
+  "price24hpc": 3.931422085438,
+  "price7dpc": 3.342994883011,
+  "price30dpc": 14.063471300844,
+  "volume": 3.91952628116898E7,
+  "volume24hpc": -15.6061211052,
+  "totalSupply": 3.0263013692E10,
+  "marketCap": 3.3452049640129504E9,
+  "marketCap24hpc": 3.931422085438,
+  "circulatingSupply": 2.5263013692E10,
+  "fullyDilutedMarketCap": 4.0072805589512277E9,
+  "fullyDilutedMarketCap24hpc": 3.931422085438,
+  "lastUpdated": "2021-08-06T23:37:28.401-0400",
+  "id": 3635
+}

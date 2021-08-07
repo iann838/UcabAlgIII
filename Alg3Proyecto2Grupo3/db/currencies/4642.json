@@ -1,0 +1,20 @@
+{
+  "rank": 52,
+  "tag": "HBAR",
+  "name": "Hedera Hashgraph",
+  "price": 0.22168069558640524,
+  "price1hpc": 0.315540711315,
+  "price24hpc": 3.268306349643,
+  "price7dpc": 5.345344518575,
+  "price30dpc": 20.186435920706,
+  "volume": 1.6561393619495955E8,
+  "volume24hpc": -16.536725583391,
+  "totalSupply": 5.0E10,
+  "marketCap": 2.0604671126046464E9,
+  "marketCap24hpc": 3.268304060903,
+  "circulatingSupply": 9.294752108E9,
+  "fullyDilutedMarketCap": 1.1084034779320261E10,
+  "fullyDilutedMarketCap24hpc": 3.268306349643,
+  "lastUpdated": "2021-08-06T23:37:35.094-0400",
+  "id": 4642
+}

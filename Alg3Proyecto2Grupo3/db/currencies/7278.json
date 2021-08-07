@@ -1,0 +1,20 @@
+{
+  "rank": 27,
+  "tag": "AAVE",
+  "name": "Aave",
+  "price": 375.2110974551113,
+  "price1hpc": 0.137281865346,
+  "price24hpc": 3.34234138346,
+  "price7dpc": 17.133585559915,
+  "price30dpc": 21.976191358594,
+  "volume": 3.9745204602274996E8,
+  "volume24hpc": -40.169538326064,
+  "totalSupply": 1.6E7,
+  "marketCap": 4.8534769597927E9,
+  "marketCap24hpc": 3.357056369061,
+  "circulatingSupply": 1.2935323589072013E7,
+  "fullyDilutedMarketCap": 6.003377559281781E9,
+  "fullyDilutedMarketCap24hpc": 3.34234138346,
+  "lastUpdated": "2021-08-06T23:37:27.296-0400",
+  "id": 7278
+}

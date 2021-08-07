@@ -1,0 +1,20 @@
+{
+  "rank": 43,
+  "tag": "AMP",
+  "name": "Amp",
+  "price": 0.06533185465913448,
+  "price1hpc": 4.426456052553,
+  "price24hpc": 9.833556414853,
+  "price7dpc": -9.969694925738,
+  "price30dpc": 14.519125732716,
+  "volume": 9.371004864621459E7,
+  "volume24hpc": 74.877470849537,
+  "totalSupply": 9.9213408535E10,
+  "marketCap": 2.7588141018049674E9,
+  "marketCap24hpc": 9.833556414853,
+  "circulatingSupply": 4.2227702186E10,
+  "fullyDilutedMarketCap": 6.046308847863231E9,
+  "fullyDilutedMarketCap24hpc": 9.833556414853,
+  "lastUpdated": "2021-08-06T23:37:30.445-0400",
+  "id": 6945
+}

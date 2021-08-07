@@ -1,0 +1,20 @@
+{
+  "rank": 29,
+  "tag": "EOS",
+  "name": "EOS",
+  "price": 4.436820009649405,
+  "price1hpc": 0.833453719789,
+  "price24hpc": 6.516763764314,
+  "price7dpc": 8.384704079346,
+  "price30dpc": 19.231048535504,
+  "volume": 1.0735069496186206E9,
+  "volume24hpc": 10.841846337918,
+  "totalSupply": 1.0319207518113E9,
+  "marketCap": 4.2408767575446258E9,
+  "marketCap24hpc": 6.519907790088,
+  "circulatingSupply": 9.558370067574E8,
+  "fullyDilutedMarketCap": 0.0,
+  "fullyDilutedMarketCap24hpc": 6.516763764314,
+  "lastUpdated": "2021-08-06T23:37:27.544-0400",
+  "id": 1765
+}

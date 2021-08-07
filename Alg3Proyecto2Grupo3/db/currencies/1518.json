@@ -1,0 +1,20 @@
+{
+  "rank": 34,
+  "tag": "MKR",
+  "name": "Maker",
+  "price": 3311.471391701027,
+  "price1hpc": 0.363334185285,
+  "price24hpc": 2.848834064145,
+  "price7dpc": 14.018426234717,
+  "price30dpc": 19.366912475138,
+  "volume": 2.0304245150946426E8,
+  "volume24hpc": -16.691819817083,
+  "totalSupply": 991328.3819549287,
+  "marketCap": 3.282755576625015E9,
+  "marketCap24hpc": 2.848834064145,
+  "circulatingSupply": 991328.3819549287,
+  "fullyDilutedMarketCap": 3.3299394676525435E9,
+  "fullyDilutedMarketCap24hpc": 2.848834064145,
+  "lastUpdated": "2021-08-06T23:37:30.176-0400",
+  "id": 1518
+}

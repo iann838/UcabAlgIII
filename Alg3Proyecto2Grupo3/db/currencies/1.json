@@ -1,0 +1,20 @@
+{
+  "rank": 1,
+  "tag": "BTC",
+  "name": "Bitcoin",
+  "price": 43327.04350371861,
+  "price1hpc": 0.159508411948,
+  "price24hpc": 7.207147248118,
+  "price7dpc": 3.505221213393,
+  "price30dpc": 29.561575226421,
+  "volume": 3.844502456206479E10,
+  "volume24hpc": 6.365380115069,
+  "totalSupply": 1.8778512E7,
+  "marketCap": 8.13617406359102E11,
+  "marketCap24hpc": 7.212748102216,
+  "circulatingSupply": 1.8778512E7,
+  "fullyDilutedMarketCap": 9.098679135780908E11,
+  "fullyDilutedMarketCap24hpc": 7.207147248118,
+  "lastUpdated": "2021-08-06T23:37:18.557-0400",
+  "id": 1
+}

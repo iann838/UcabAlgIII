@@ -1,0 +1,20 @@
+{
+  "rank": 24,
+  "tag": "LUNA",
+  "name": "Terra",
+  "price": 14.866089749924527,
+  "price1hpc": 0.75706698258,
+  "price24hpc": 3.728989444585,
+  "price7dpc": 35.095445485625,
+  "price30dpc": 118.757989416251,
+  "volume": 4.678427984455754E8,
+  "volume24hpc": -6.21327510523,
+  "totalSupply": 9.95989098575045E8,
+  "marketCap": 6.157425902599374E9,
+  "marketCap24hpc": 3.545417451385,
+  "circulatingSupply": 4.1419270340612835E8,
+  "fullyDilutedMarketCap": 0.0,
+  "fullyDilutedMarketCap24hpc": 3.728989444585,
+  "lastUpdated": "2021-08-06T23:37:26.363-0400",
+  "id": 4172
+}

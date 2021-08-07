@@ -1,0 +1,20 @@
+{
+  "rank": 12,
+  "tag": "SOL",
+  "name": "Solana",
+  "price": 39.683234691321,
+  "price1hpc": 0.04370457626,
+  "price24hpc": 10.000691011033,
+  "price7dpc": 21.014143800574,
+  "price30dpc": 9.809426043622,
+  "volume": 5.559424438477527E8,
+  "volume24hpc": -8.1653634136,
+  "totalSupply": 4.9451916174206734E8,
+  "marketCap": 1.081913502418635E10,
+  "marketCap24hpc": 10.000691011033,
+  "circulatingSupply": 2.7263742757725775E8,
+  "fullyDilutedMarketCap": 0.0,
+  "fullyDilutedMarketCap24hpc": 10.000691011033,
+  "lastUpdated": "2021-08-06T23:37:23.592-0400",
+  "id": 5426
+}

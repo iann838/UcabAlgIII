@@ -1,0 +1,20 @@
+{
+  "rank": 45,
+  "tag": "BTT",
+  "name": "BitTorrent",
+  "price": 0.00399315332823545,
+  "price1hpc": 0.266647681157,
+  "price24hpc": 11.587878225997,
+  "price7dpc": 40.950224239754,
+  "price30dpc": 52.99734757055,
+  "volume": 6.299729479280761E8,
+  "volume24hpc": -4.085062100295,
+  "totalSupply": 9.9E11,
+  "marketCap": 2.635292020996472E9,
+  "marketCap24hpc": 11.587878225997,
+  "circulatingSupply": 6.59952625E11,
+  "fullyDilutedMarketCap": 0.0,
+  "fullyDilutedMarketCap24hpc": 11.587878225997,
+  "lastUpdated": "2021-08-06T23:37:35.360-0400",
+  "id": 3718
+}

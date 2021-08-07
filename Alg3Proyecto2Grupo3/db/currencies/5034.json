@@ -1,0 +1,20 @@
+{
+  "rank": 53,
+  "tag": "KSM",
+  "name": "Kusama",
+  "price": 238.85476614765471,
+  "price1hpc": 0.092698635976,
+  "price24hpc": 10.871540200239,
+  "price7dpc": 22.115874313931,
+  "price30dpc": 6.349294573765,
+  "volume": 2.1459653523304307E8,
+  "volume24hpc": 63.654368588874,
+  "totalSupply": 9651217.451262059,
+  "marketCap": 2.023123290715033E9,
+  "marketCap24hpc": 10.871540200239,
+  "circulatingSupply": 8470098.057262057,
+  "fullyDilutedMarketCap": 0.0,
+  "fullyDilutedMarketCap24hpc": 10.871540200239,
+  "lastUpdated": "2021-08-06T23:37:35.891-0400",
+  "id": 5034
+}

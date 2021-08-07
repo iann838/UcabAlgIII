@@ -1,0 +1,20 @@
+{
+  "rank": 35,
+  "tag": "NEO",
+  "name": "Neo",
+  "price": 45.69307571673165,
+  "price1hpc": 0.557430686911,
+  "price24hpc": 5.336913600939,
+  "price7dpc": 4.895873176628,
+  "price30dpc": 27.283917444012,
+  "volume": 4.154015301272392E8,
+  "volume24hpc": 15.416554068582,
+  "totalSupply": 1.0E8,
+  "marketCap": 3.2231361458527374E9,
+  "marketCap24hpc": 5.336913600939,
+  "circulatingSupply": 7.0538831E7,
+  "fullyDilutedMarketCap": 4.569307571673165E9,
+  "fullyDilutedMarketCap24hpc": 5.336913600939,
+  "lastUpdated": "2021-08-06T23:37:29.375-0400",
+  "id": 1376
+}

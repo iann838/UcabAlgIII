@@ -1,0 +1,20 @@
+{
+  "rank": 4,
+  "tag": "BNB",
+  "name": "Binance Coin",
+  "price": 348.7486876427437,
+  "price1hpc": -0.12644984817,
+  "price24hpc": 4.112653394423,
+  "price7dpc": 8.496711971507,
+  "price30dpc": 7.776894756397,
+  "volume": 1.7526637853356562E9,
+  "volume24hpc": 14.083430622242,
+  "totalSupply": 1.68137036E8,
+  "marketCap": 5.863757064914075E10,
+  "marketCap24hpc": 4.112653394423,
+  "circulatingSupply": 1.68137036E8,
+  "fullyDilutedMarketCap": 5.863757064914075E10,
+  "fullyDilutedMarketCap24hpc": 4.112653394423,
+  "lastUpdated": "2021-08-06T23:37:19.838-0400",
+  "id": 1839
+}

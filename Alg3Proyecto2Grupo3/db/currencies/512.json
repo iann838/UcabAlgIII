@@ -1,0 +1,20 @@
+{
+  "rank": 21,
+  "tag": "XLM",
+  "name": "Stellar",
+  "price": 0.29107219540240953,
+  "price1hpc": 0.408271153097,
+  "price24hpc": 5.084821371609,
+  "price7dpc": 3.314810152124,
+  "price30dpc": 15.359119646439,
+  "volume": 5.547071532705456E8,
+  "volume24hpc": -4.260947365568,
+  "totalSupply": 5.000180293299935E10,
+  "marketCap": 6.821948500446549E9,
+  "marketCap24hpc": 5.1557105663,
+  "circulatingSupply": 2.3437307335436672E10,
+  "fullyDilutedMarketCap": 1.4554135682855995E10,
+  "fullyDilutedMarketCap24hpc": 5.084821371609,
+  "lastUpdated": "2021-08-06T23:37:24.728-0400",
+  "id": 512
+}

@@ -1,0 +1,20 @@
+{
+  "rank": 51,
+  "tag": "UST",
+  "name": "TerraUSD",
+  "price": 1.0023943539435995,
+  "price1hpc": -0.066079071225,
+  "price24hpc": 0.033201365434,
+  "price7dpc": 0.070903909722,
+  "price30dpc": 0.186268519985,
+  "volume": 2.9349663278685063E7,
+  "volume24hpc": -12.770834745279,
+  "totalSupply": 2.06154119955808E9,
+  "marketCap": 2.066477258859135E9,
+  "marketCap24hpc": 0.579366800882,
+  "circulatingSupply": 2.06154119955808E9,
+  "fullyDilutedMarketCap": 0.0,
+  "fullyDilutedMarketCap24hpc": 0.033201365434,
+  "lastUpdated": "2021-08-06T23:37:34.536-0400",
+  "id": 7129
+}

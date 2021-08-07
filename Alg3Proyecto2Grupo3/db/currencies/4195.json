@@ -1,0 +1,20 @@
+{
+  "rank": 30,
+  "tag": "FTT",
+  "name": "FTX Token",
+  "price": 42.21384583124014,
+  "price1hpc": 0.451228957008,
+  "price24hpc": 5.733434441804,
+  "price7dpc": 22.604471587636,
+  "price30dpc": 43.091433082153,
+  "volume": 8.7708029584978E7,
+  "volume24hpc": 17.088028743686,
+  "totalSupply": 3.45219293590976E8,
+  "marketCap": 3.9827479195541024E9,
+  "marketCap24hpc": 5.733434441804,
+  "circulatingSupply": 9.4346957523749E7,
+  "fullyDilutedMarketCap": 1.4866450719595528E10,
+  "fullyDilutedMarketCap24hpc": 5.733434441804,
+  "lastUpdated": "2021-08-06T23:37:27.834-0400",
+  "id": 4195
+}

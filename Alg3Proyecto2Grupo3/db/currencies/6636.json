@@ -1,0 +1,20 @@
+{
+  "rank": 9,
+  "tag": "DOT",
+  "name": "Polkadot",
+  "price": 20.723241358854118,
+  "price1hpc": 0.478042673856,
+  "price24hpc": 11.249166662134,
+  "price7dpc": 30.013511074912,
+  "price30dpc": 27.218987894612,
+  "volume": 1.7298581007629275E9,
+  "volume24hpc": 9.438220153956,
+  "totalSupply": 1.097193687257252E9,
+  "marketCap": 2.0339229973794178E10,
+  "marketCap24hpc": 11.284046293764,
+  "circulatingSupply": 9.814695308320642E8,
+  "fullyDilutedMarketCap": 0.0,
+  "fullyDilutedMarketCap24hpc": 11.249166662134,
+  "lastUpdated": "2021-08-06T23:37:21.549-0400",
+  "id": 6636
+}

@@ -1,0 +1,20 @@
+{
+  "rank": 36,
+  "tag": "BTCB",
+  "name": "Bitcoin BEP2",
+  "price": 43099.37010754244,
+  "price1hpc": -0.530744125174,
+  "price24hpc": 6.685683325106,
+  "price7dpc": 3.301439954026,
+  "price30dpc": 29.074323247471,
+  "volume": 3.990995237498504E7,
+  "volume24hpc": -18.175021835321,
+  "totalSupply": 80501.0,
+  "marketCap": 3.151046764015988E9,
+  "marketCap24hpc": 6.685397598876,
+  "circulatingSupply": 73111.20223227,
+  "fullyDilutedMarketCap": 0.0,
+  "fullyDilutedMarketCap24hpc": 6.685683325106,
+  "lastUpdated": "2021-08-06T23:37:29.906-0400",
+  "id": 4023
+}

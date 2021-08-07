@@ -1,0 +1,20 @@
+{
+  "rank": 42,
+  "tag": "ALGO",
+  "name": "Algorand",
+  "price": 0.8634546523930517,
+  "price1hpc": 0.044854449788,
+  "price24hpc": 3.431467286994,
+  "price7dpc": 2.907626096015,
+  "price30dpc": -3.101455882005,
+  "volume": 8.953893444881353E7,
+  "volume24hpc": 8.001026674852,
+  "totalSupply": 5.672294427846326E9,
+  "marketCap": 2.7421260874392414E9,
+  "marketCap24hpc": 3.46324014216,
+  "circulatingSupply": 3.175761552548799E9,
+  "fullyDilutedMarketCap": 8.634546523930517E9,
+  "fullyDilutedMarketCap24hpc": 3.431467286994,
+  "lastUpdated": "2021-08-06T23:37:31.546-0400",
+  "id": 4030
+}

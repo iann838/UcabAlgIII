@@ -1,0 +1,20 @@
+{
+  "rank": 16,
+  "tag": "WBTC",
+  "name": "Wrapped Bitcoin",
+  "price": 43356.10295166712,
+  "price1hpc": 0.172247553033,
+  "price24hpc": 7.362129377074,
+  "price7dpc": 3.658090528522,
+  "price30dpc": 29.782966255742,
+  "volume": 3.306624506185018E8,
+  "volume24hpc": -18.227511316969,
+  "totalSupply": 194123.44984399,
+  "marketCap": 8.416436276768819E9,
+  "marketCap24hpc": 7.362129377074,
+  "circulatingSupply": 194123.44984399,
+  "fullyDilutedMarketCap": 0.0,
+  "fullyDilutedMarketCap24hpc": 7.362129377074,
+  "lastUpdated": "2021-08-06T23:37:23.866-0400",
+  "id": 3717
+}

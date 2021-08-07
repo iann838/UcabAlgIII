@@ -1,0 +1,20 @@
+{
+  "rank": 20,
+  "tag": "THETA",
+  "name": "THETA",
+  "price": 6.923170491441422,
+  "price1hpc": -0.307995786404,
+  "price24hpc": -0.991568391972,
+  "price7dpc": 17.345406538416,
+  "price30dpc": 8.026958898087,
+  "volume": 4.231048449343332E8,
+  "volume24hpc": -37.723402983008,
+  "totalSupply": 1.0E9,
+  "marketCap": 6.9231704914414215E9,
+  "marketCap24hpc": -0.991568391972,
+  "circulatingSupply": 1.0E9,
+  "fullyDilutedMarketCap": 6.9231704914414215E9,
+  "fullyDilutedMarketCap24hpc": -0.991568391972,
+  "lastUpdated": "2021-08-06T23:37:24.995-0400",
+  "id": 2416
+}

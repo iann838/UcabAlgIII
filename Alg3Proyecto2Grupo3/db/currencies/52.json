@@ -1,0 +1,20 @@
+{
+  "rank": 6,
+  "tag": "XRP",
+  "name": "XRP",
+  "price": 0.7595221717206575,
+  "price1hpc": 0.15395062929,
+  "price24hpc": 3.917831481952,
+  "price7dpc": 1.324538801803,
+  "price30dpc": 18.545634786727,
+  "volume": 2.5445877002907805E9,
+  "volume24hpc": 6.612831403804,
+  "totalSupply": 9.9990319777E10,
+  "marketCap": 3.5255201004057915E10,
+  "marketCap24hpc": 4.03960795591,
+  "circulatingSupply": 4.6417606117E10,
+  "fullyDilutedMarketCap": 7.595221717206575E10,
+  "fullyDilutedMarketCap24hpc": 3.917831481952,
+  "lastUpdated": "2021-08-06T23:37:20.704-0400",
+  "id": 52
+}

@@ -1,0 +1,20 @@
+{
+  "rank": 48,
+  "tag": "COMP",
+  "name": "Compound",
+  "price": 471.2750836541311,
+  "price1hpc": -0.700216315548,
+  "price24hpc": 3.110034850446,
+  "price7dpc": 16.905661033251,
+  "price30dpc": 9.331969430244,
+  "volume": 2.2558318334673414E8,
+  "volume24hpc": -39.995652647614,
+  "totalSupply": 1.0E7,
+  "marketCap": 2.568438827195345E9,
+  "marketCap24hpc": 3.148591954759,
+  "circulatingSupply": 5449977.977363901,
+  "fullyDilutedMarketCap": 4.712750836541311E9,
+  "fullyDilutedMarketCap24hpc": 3.110034850446,
+  "lastUpdated": "2021-08-06T23:37:33.959-0400",
+  "id": 5692
+}

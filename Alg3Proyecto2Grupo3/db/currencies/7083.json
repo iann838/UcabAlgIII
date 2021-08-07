@@ -1,0 +1,20 @@
+{
+  "rank": 10,
+  "tag": "UNI",
+  "name": "Uniswap",
+  "price": 26.385849958779563,
+  "price1hpc": -0.684364904928,
+  "price24hpc": 5.446394364664,
+  "price7dpc": 24.377143794027,
+  "price30dpc": 22.89489965797,
+  "volume": 4.9247819071836954E8,
+  "volume24hpc": -28.957001899568,
+  "totalSupply": 1.0E9,
+  "marketCap": 1.5498971147866053E10,
+  "marketCap24hpc": 5.448226060702,
+  "circulatingSupply": 5.87397077300099E8,
+  "fullyDilutedMarketCap": 2.6385849958779564E10,
+  "fullyDilutedMarketCap24hpc": 5.446394364664,
+  "lastUpdated": "2021-08-06T23:37:21.813-0400",
+  "id": 7083
+}

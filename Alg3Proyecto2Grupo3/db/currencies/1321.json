@@ -1,0 +1,20 @@
+{
+  "rank": 19,
+  "tag": "ETC",
+  "name": "Ethereum Classic",
+  "price": 54.67106985846989,
+  "price1hpc": -0.189353514985,
+  "price24hpc": 5.187840563153,
+  "price7dpc": 7.461696122366,
+  "price30dpc": 5.193861303242,
+  "volume": 2.254310498394756E9,
+  "volume24hpc": -3.707076872275,
+  "totalSupply": 2.107E8,
+  "marketCap": 7.041673776714662E9,
+  "marketCap24hpc": 5.204916566876,
+  "circulatingSupply": 1.288007312632411E8,
+  "fullyDilutedMarketCap": 1.1519194419179605E10,
+  "fullyDilutedMarketCap24hpc": 5.187840563153,
+  "lastUpdated": "2021-08-06T23:37:24.435-0400",
+  "id": 1321
+}

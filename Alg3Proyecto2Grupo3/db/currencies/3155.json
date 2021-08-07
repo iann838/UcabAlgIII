@@ -1,0 +1,20 @@
+{
+  "rank": 55,
+  "tag": "QNT",
+  "name": "Quant",
+  "price": 162.46304420995293,
+  "price1hpc": -2.173727448792,
+  "price24hpc": -5.123192223017,
+  "price7dpc": 27.503304379645,
+  "price30dpc": 113.07875552089,
+  "volume": 6.0848388976810634E7,
+  "volume24hpc": 4.759557042405,
+  "totalSupply": 1.4612493080826E7,
+  "marketCap": 1.9613737674291787E9,
+  "marketCap24hpc": -5.123192223017,
+  "circulatingSupply": 1.2072738E7,
+  "fullyDilutedMarketCap": 2.373990096276628E9,
+  "fullyDilutedMarketCap24hpc": -5.123192223017,
+  "lastUpdated": "2021-08-06T23:37:34.249-0400",
+  "id": 3155
+}
