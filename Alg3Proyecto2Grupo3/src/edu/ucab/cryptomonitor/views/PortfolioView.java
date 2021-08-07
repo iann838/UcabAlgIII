@@ -48,8 +48,8 @@ public class PortfolioView extends View implements ActionListener {
     private JScrollPane pane;
     private JTable cryptoTable;
     private JTableHeader header;
-    private JButton buttonRegresar, btnResetUsdt, btnAddCurrency, btnDeleteCurrency, btnTrade;
-    
+    private JButton buttonRegresar, btnResetAll, btnAddCurrency, btnDeleteCurrency, btnTrade;
+
     private Image image, newImg;
     private ImageIcon iconView, imageIcon;
     private final String iconPath = "resources/logo.png";
@@ -58,7 +58,7 @@ public class PortfolioView extends View implements ActionListener {
 
     public PortfolioView() {
 //        PortfolioView self = this;
-        setTitle("UCABIT - Ventana Privada");
+        setTitle("UCABIT - Portafolio");
         setResizable(false);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         iconView = new ImageIcon(iconPath);
@@ -99,28 +99,29 @@ public class PortfolioView extends View implements ActionListener {
         cryptoTable = new JTable();
         cryptoTable.setModel(new DefaultTableModel(
             new Object[][] {
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
             },
             new String[] {
                 "<html>\r\n<style>\r\nh1 {text-align: center; font-size:14px }\r\n</style>\r\n<h1>Moneda</h1>\r\n</html>",
                 "<html>\r\n<style>\r\nh1 {text-align: center; font-size:14px }\r\n</style>\r\n<h1>Etiqueta</h1>\r\n</html>",
                 "<html>\r\n<style>\r\nh1 {text-align: center; font-size:14px }\r\n</style>\r\n<h1>Precio USDT</h1>\r\n</html>",
-                "<html>\r\n<style>\r\nh1 {text-align: center; font-size:14px }\r\n</style>\r\n<h1>Adquisi\u00F3n</h1>\r\n</html>",
-                "<html>\r\n<style>\r\nh1 {text-align: center; font-size:14px }\r\n</style>\r\n<h1>Adquisi\u00F3n USDT</h1>\r\n</html>",
-                "<html>\r\n<style>\r\nh1 {text-align: center; font-size:14px }\r\n</style>\r\n<h1>Inversion</h1>\r\n</html>"
+                "<html>\r\n<style>\r\nh1 {text-align: center; font-size:14px }\r\n</style>\r\n<h1>Inversi\u00F3n</h1>\r\n</html>",
+                "<html>\r\n<style>\r\nh1 {text-align: center; font-size:14px }\r\n</style>\r\n<h1>Inversi\u00F3n USDT</h1>\r\n</html>",
+                "<html>\r\n<style>\r\nh1 {text-align: center; font-size:14px }\r\n</style>\r\n<h1>Profit USDT</h1>\r\n</html>",
+                "<html>\r\n<style>\r\nh1 {text-align: center; font-size:14px }\r\n</style>\r\n<h1>Profit %</h1>\r\n</html>",
             }
         ) {
             boolean[] columnEditables = new boolean[] {
-                false, false, false, false, false, false
+                false, false, false, false, false, false, false
             };
             public boolean isCellEditable(int row, int column) {
                 return columnEditables[column];
@@ -129,20 +130,24 @@ public class PortfolioView extends View implements ActionListener {
         DefaultTableCellRenderer numericRenderer = new DefaultTableCellRenderer();
         numericRenderer.setHorizontalAlignment(JLabel.RIGHT);
         cryptoTable.getColumnModel().getColumn(0).setResizable(false);
-        cryptoTable.getColumnModel().getColumn(0).setPreferredWidth(133);
-        cryptoTable.getColumnModel().getColumn(1).setPreferredWidth(32);
+        cryptoTable.getColumnModel().getColumn(0).setPreferredWidth(100);
+        cryptoTable.getColumnModel().getColumn(1).setPreferredWidth(20);
+        cryptoTable.getColumnModel().getColumn(1).setResizable(false);
         cryptoTable.getColumnModel().getColumn(2).setResizable(false);
         cryptoTable.getColumnModel().getColumn(2).setPreferredWidth(57);
         cryptoTable.getColumnModel().getColumn(2).setCellRenderer(numericRenderer);
         cryptoTable.getColumnModel().getColumn(3).setResizable(false);
-        cryptoTable.getColumnModel().getColumn(3).setPreferredWidth(80);
+        cryptoTable.getColumnModel().getColumn(3).setPreferredWidth(75);
         cryptoTable.getColumnModel().getColumn(3).setCellRenderer(numericRenderer);
-        cryptoTable.getColumnModel().getColumn(4).setPreferredWidth(80);
+        cryptoTable.getColumnModel().getColumn(4).setPreferredWidth(75);
         cryptoTable.getColumnModel().getColumn(4).setResizable(false);
         cryptoTable.getColumnModel().getColumn(4).setCellRenderer(numericRenderer);
         cryptoTable.getColumnModel().getColumn(5).setResizable(false);
-        cryptoTable.getColumnModel().getColumn(5).setPreferredWidth(80);
+        cryptoTable.getColumnModel().getColumn(5).setPreferredWidth(75);
         cryptoTable.getColumnModel().getColumn(5).setCellRenderer(numericRenderer);
+        cryptoTable.getColumnModel().getColumn(6).setResizable(false);
+        cryptoTable.getColumnModel().getColumn(6).setPreferredWidth(40);
+        cryptoTable.getColumnModel().getColumn(6).setCellRenderer(numericRenderer);
 
         cryptoTable.setShowVerticalLines(false);
         cryptoTable.setRowHeight(20);
@@ -182,11 +187,11 @@ public class PortfolioView extends View implements ActionListener {
         buttonRegresar.addActionListener(this);
         container.add(buttonRegresar);
         
-        btnResetUsdt = new JButton("Reset USDT");
-        btnResetUsdt.setFont(new Font("Tahoma", Font.BOLD, 20));
-        btnResetUsdt.setBounds(311, 490, 165, 67);
-        btnResetUsdt.addActionListener(this);
-        container.add(btnResetUsdt);
+        btnResetAll = new JButton("Reset All");
+        btnResetAll.setFont(new Font("Tahoma", Font.BOLD, 20));
+        btnResetAll.setBounds(311, 490, 165, 67);
+        btnResetAll.addActionListener(this);
+        container.add(btnResetAll);
         
         btnAddCurrency = new JButton("<html>\r\n<style>\r\nh1 {text-align: center; font-size:14px }\r\n</style>\r\n<h1>Agregar criptomoneda</h1>\r\n</html>");
         btnAddCurrency.setVerticalAlignment(SwingConstants.TOP);
@@ -230,7 +235,7 @@ public class PortfolioView extends View implements ActionListener {
                     usdtBalance = balance;
             }
             if (usdtBalance == null) {
-                usdtBalance = new WalletBalance(this.request.getUser().getId(), usdtCurrency.getId(), 500);
+                usdtBalance = new WalletBalance(this.request.getUser().getId(), usdtCurrency.getId(), 500, 0);
                 usdtBalance.save();
             }
             this.lblUSDT.setText(Double.toString(usdtBalance.getBalance()));
@@ -246,13 +251,34 @@ public class PortfolioView extends View implements ActionListener {
                         List<WalletBalance> balances = WalletBalance.objects.filter("user", request.getUser().getId());
                         int i = 0;
                         for (WalletBalance balance: balances) {
-                            if (i > 9) break;
+                            if (balance.getCurrency() == Currency.objects.first("tag", "USDT").getId()) {
+                                self.lblUSDT.setText(Double.toString(balance.getBalance()));
+                                continue;
+                            }
+                            if (i > 9)
+                                break;
                             Currency currency = Currency.objects.get(balance.getCurrency());
                             cryptoTable.getModel().setValueAt(currency.getName(), i, 0);
                             cryptoTable.getModel().setValueAt(currency.getTag(), i, 1);
-                            cryptoTable.getModel().setValueAt(currency.getPrice(), i, 2);
-                            cryptoTable.getModel().setValueAt(balance.getBalance(), i, 3);
-                            cryptoTable.getModel().setValueAt(balance.getBalance() * currency.getPrice(), i, 4);
+                            cryptoTable.getModel().setValueAt(String.format("%.2f", currency.getPrice()), i, 2);
+                            cryptoTable.getModel().setValueAt(String.format("%.8f", balance.getBalance()), i, 3);
+                            cryptoTable.getModel().setValueAt(String.format("%.2f", balance.getUsdtInversion()), i, 4);
+                            cryptoTable.getModel().setValueAt(String.format("%.2f", balance.getBalance() * currency.getPrice() - balance.getUsdtInversion()), i, 5);
+                            if (balance.getUsdtInversion() != 0.0) {                                
+                                cryptoTable.getModel().setValueAt(String.format("%.5f", (balance.getBalance() * currency.getPrice() - balance.getUsdtInversion()) / balance.getUsdtInversion() * 100) + "%", i, 6);
+                            } else {
+                                cryptoTable.getModel().setValueAt(String.format("%.5f", 0.0) + "%", i, 6);                                
+                            }
+                            i++;
+                        }
+                        while (i < 10) {
+                            cryptoTable.getModel().setValueAt("", i, 0);
+                            cryptoTable.getModel().setValueAt("", i, 1);
+                            cryptoTable.getModel().setValueAt("", i, 2);
+                            cryptoTable.getModel().setValueAt("", i, 3);
+                            cryptoTable.getModel().setValueAt("", i, 4);
+                            cryptoTable.getModel().setValueAt("", i, 5);
+                            cryptoTable.getModel().setValueAt("", i, 6);
                             i++;
                         }
                         TimeUnit.SECONDS.sleep(1);
@@ -277,7 +303,7 @@ public class PortfolioView extends View implements ActionListener {
                 for (WalletBalance balance: balances) {
                     activeCurrencies.add(balance.getCurrency());
                 }
-                if (balances.size() > 9) {
+                if (balances.size() > 10) {
                     JOptionPane.showMessageDialog(this, "Solo puede añadir 10 monedas.");
                     return;
                 }
@@ -300,13 +326,76 @@ public class PortfolioView extends View implements ActionListener {
                 if (chosen == JOptionPane.CANCEL_OPTION || chosen == JOptionPane.CLOSED_OPTION)
                     return;
                 String currencyName = comboCurrencies.getSelectedItem().toString().split(" -- ")[0];
-                WalletBalance newBalance = new WalletBalance(this.request.getUser().getId(), Currency.objects.first("name", currencyName).getId(), 0);
+                WalletBalance newBalance = new WalletBalance(this.request.getUser().getId(), Currency.objects.first("name", currencyName).getId(), 0, 0);
                 newBalance.save();
             } catch (IOException | ObjectDoesNotExist | ValidationError e1) {
                 JOptionPane.showMessageDialog(this, "Error en accesso a database.");
             }
             
         }
+        if (e.getSource() == btnDeleteCurrency) {
+            try {
+                List<WalletBalance> balances = WalletBalance.objects.filter("user", request.getUser().getId());
+                int row = this.cryptoTable.getSelectedRow();
+                if (row == -1) {
+                    JOptionPane.showMessageDialog(this, "Debe seleccionar una moneda.");
+                    return;
+                }
+                String value = this.cryptoTable.getModel().getValueAt(row, 0).toString();
+                Currency currency = Currency.objects.first("name", value);
+                for (WalletBalance balance: balances) {
+                    if (balance.getCurrency() == currency.getId()) {
+                        int res = JOptionPane.showConfirmDialog(this, String.format("Desea eliminar %s ?", currency.getName()), "Warning", JOptionPane.YES_NO_OPTION);
+                        if (res == JOptionPane.YES_OPTION)
+                            balance.delete();
+                    }
+                }
+            } catch (IOException | ObjectDoesNotExist e1) {
+                JOptionPane.showMessageDialog(this, "Error en accesso a database.");
+            }
+        }
+        if (e.getSource() == btnTrade) {
+            try {
+                List<WalletBalance> balances = WalletBalance.objects.filter("user", request.getUser().getId());
+                int row = this.cryptoTable.getSelectedRow();
+                if (row == -1) {
+                    JOptionPane.showMessageDialog(this, "Debe seleccionar una moneda.");
+                    return;
+                }
+                String value = this.cryptoTable.getModel().getValueAt(row, 0).toString();
+                Currency currency = Currency.objects.first("name", value);
+                for (WalletBalance balance: balances) {
+                    if (balance.getCurrency() == currency.getId()) {
+                        TradeView trade = new TradeView(currency.getId());
+                        trade.setRequest(request);
+                        trade.postInit();
+                        trade.setVisible(true);
+                    }
+                }
+            } catch (IOException | ObjectDoesNotExist e1) {
+                JOptionPane.showMessageDialog(this, "Error en accesso a database.");
+            }
+        }
+        if (e.getSource() == btnResetAll) {
+            try {
+                List<WalletBalance> balances = WalletBalance.objects.filter("user", request.getUser().getId());
+                String value = JOptionPane.showInputDialog(this, "Valor USDT a resetear:");
+                double usdtValue = Double.parseDouble(value);
+                
+                for (WalletBalance balance: balances) {
+                    balance.setBalance(0);
+                    if (balance.getCurrency() == Currency.objects.first("tag", "USDT").getId())
+                        balance.setBalance(usdtValue);
+                    balance.setUsdtInversion(0);
+                    balance.save();
+                }
+            } catch (NumberFormatException e1) {
+                JOptionPane.showMessageDialog(this, "Input invalido.");                
+            } catch (Exception e1) {                
+                JOptionPane.showMessageDialog(this, "Error en accesso a database.");
+            }
+        }
+        
     }
     
 }

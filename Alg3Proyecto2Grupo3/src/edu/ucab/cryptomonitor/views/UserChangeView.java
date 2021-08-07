@@ -30,9 +30,48 @@ import javax.swing.SwingConstants;
 import javax.swing.JTextField;
 import javax.swing.JPasswordField;
 
-@SuppressWarnings("serial")
-public class UserChangeView extends View implements ActionListener {
+/**
+*
+* @author Jian Feng
+* @author Arturo Hung
+* @author Kleysber Noguera
+* 
+*/
 
+@SuppressWarnings("serial")
+public class UserChangeView extends View implements ActionListener { // Inicio de la clase UserChangView
+
+    /*
+     *   Atributos y/o campos de clase:
+     *   
+     *   container: El contenedor de la ventana de interfaz gráfica,
+     *   			la cual posee en su composición el resto de atributos
+     *   			y campos declarados en la clase
+     *   
+     *   labelBackground: Etiqueta que muestra en la ventana 
+     *                    la imagen de fondo "userbg.png"
+     *                    
+     *   buttonModify: Botón que al accionar permite el
+     *                 guardado de modificaciones de datos de acceso
+     *                 
+     *   buttonHome: Botón que al accionar permite el redireccionamiento
+     *               a la clase HomeView
+     *   
+     *   image, newImg, : Atributos empleados para dimensionar una 
+     *   imageIcon        etiqueta JLabel como imagen
+     *   
+     *   iconView: Atributo empleado para el muestreo del ícono de
+     *   		   la ventana gráfica
+     *   
+     *   iconPath:  El url relativo de un determinado archivo de imagen 
+     *   
+     *   txtUsername: Campo de texto para colocar el nombre de usuario
+     *    
+     *   txtEmail: Campo de texto para colocar el correo electrónico
+     *   
+     *   txtPassword: Campo de texto para colocar la contraseña
+     */	
+	
     private JPanel container;
     private JLabel labelBackground;
     private JButton buttonModify, buttonHome;
@@ -54,28 +93,35 @@ public class UserChangeView extends View implements ActionListener {
         setIconImage(iconView.getImage());
         setResizable(false);
 
+        // Etiqueta de fondo
+        
         labelBackground = new JLabel("");
-        labelBackground.setBounds(398, 0, 580, 598);
+        labelBackground.setBounds(395, 0, 596, 672);
 
         imageIcon = new ImageIcon("resources/userbg.png");
         image = imageIcon.getImage();
-        newImg = image.getScaledInstance(580, 598, java.awt.Image.SCALE_SMOOTH);
+        newImg = image.getScaledInstance(596, 672, java.awt.Image.SCALE_SMOOTH);
         imageIcon = new ImageIcon(newImg);
         labelBackground = new JLabel(imageIcon);
 
         labelBackground.setBounds(395, 0, 596, 672);
 
+        // Botón de modificación de datos de acceso (guardado de cambios)
+        
         buttonModify = new JButton("Guardar");
         buttonModify.setFont(new Font("Tahoma", Font.BOLD, 20));
         buttonModify.setBounds(102, 521, 190, 46);
         buttonModify.addActionListener(self);
 
-        buttonHome = new JButton(
-                "Regresar");
+        // Botón de regreso al área privada
+        
+        buttonHome = new JButton("Regresar");
         buttonHome.setFont(new Font("Tahoma", Font.BOLD, 18));
         buttonHome.setBounds(102, 577, 190, 46);
         buttonHome.addActionListener(self);
 
+        // Contenedor
+        
         container = new JPanel();
         container.setBackground(new Color(140, 160, 206));
         container.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -85,6 +131,8 @@ public class UserChangeView extends View implements ActionListener {
         container.add(buttonModify);
         container.add(buttonHome);
 
+        // Etiqueta de logo
+        
         JLabel labelLogo = new JLabel("");
         labelLogo.setBounds(94, 28, 122, 122);
 
@@ -97,52 +145,75 @@ public class UserChangeView extends View implements ActionListener {
         labelLogo.setBounds(138, 28, 122, 122);
         container.add(labelLogo);
         
+        // Etiqueta de registro
+        
         JLabel labelRegister = new JLabel("Modificar Usuario");
         labelRegister.setHorizontalAlignment(SwingConstants.CENTER);
         labelRegister.setFont(new Font("Tahoma", Font.BOLD, 20));
         labelRegister.setBounds(74, 173, 246, 33);
         container.add(labelRegister);
         
+        // Etiqueta de nombre de usuario
+        
         JLabel labelUsername = new JLabel("Username");
         labelUsername.setFont(new Font("Tahoma", Font.BOLD, 18));
         labelUsername.setBounds(74, 216, 173, 19);
         container.add(labelUsername);
+        
+        // Campo de nombre de usuario
         
         txtUsername = new JTextField();
         txtUsername.setFont(new Font("Tahoma", Font.PLAIN, 18));
         txtUsername.setBounds(74, 248, 246, 31);
         container.add(txtUsername);
         
+        // Etiqueta de correo electrónico
+        
         JLabel labelEmail = new JLabel("Correo electr\u00F3nico");
         labelEmail.setFont(new Font("Tahoma", Font.BOLD, 18));
         labelEmail.setBounds(74, 289, 190, 19);
         container.add(labelEmail);
+        
+        // Campo de texto de correo electrónico
         
         txtEmail = new JTextField();
         txtEmail.setFont(new Font("Tahoma", Font.PLAIN, 18));
         txtEmail.setBounds(74, 318, 246, 33);
         container.add(txtEmail);
         
+        // Etiqueta de contraseña
+        
         JLabel labelPassword = new JLabel("Nueva Contrase\u00F1a");
         labelPassword.setFont(new Font("Tahoma", Font.BOLD, 18));
         labelPassword.setBounds(74, 361, 246, 18);
         container.add(labelPassword);
         
+        // Campo de texto de contraseña
+        
         txtPassword = new JTextField();
         txtPassword.setFont(new Font("Tahoma", Font.PLAIN, 18));
         txtPassword.setBounds(74, 389, 246, 33);
         container.add(txtPassword);
+    
+        // Etiqueta de confirmación de nueva contraseña
         
         JLabel labelConfirm = new JLabel("Confirmar contrase\u00F1a");
         labelConfirm.setFont(new Font("Tahoma", Font.BOLD, 18));
         labelConfirm.setBounds(74, 432, 235, 19);
         container.add(labelConfirm);
         
+       // Campo de texto de confirmación de nueva contraseña
+         
         txtConfirm = new JPasswordField();
         txtConfirm.setFont(new Font("Tahoma", Font.PLAIN, 18));
         txtConfirm.setBounds(74, 461, 246, 33);
         container.add(txtConfirm);
 
+        /*
+         *  Método para evitar la finalización del programa
+         *  al presionar la pestaña de cierre de una ventana externa
+         */     
+        
         addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {
@@ -156,10 +227,13 @@ public class UserChangeView extends View implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
 
+    	// Botón "Regresar"
         if (e.getSource() == buttonHome) {
             response = new Response(HomeView.class, Status.REDIRECT);
             dispatchEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
         }
+        
+        // Botón "Guardar"
         if (e.getSource() == buttonModify) {
 
             if (!((txtUsername.getText().equals("")) || (txtEmail.getText().equals(""))
@@ -207,10 +281,18 @@ public class UserChangeView extends View implements ActionListener {
 
     }
 
+    /**
+     * Colocación de datos de acceso registrados del usuario actual
+     * (nombre de usuario y correo electrónico)
+     *
+     * @param   El método no recibe ningún tipo de parámetro
+     * @return  El método no devuelve ningún resultado
+     */   
+    
     @Override
     public void postInit() {
         txtUsername.setText(this.request.getUser().getUsername());
         txtEmail.setText(this.request.getUser().getEmail());
     }
 
-}
+} // Cierre de la clase UserChangView

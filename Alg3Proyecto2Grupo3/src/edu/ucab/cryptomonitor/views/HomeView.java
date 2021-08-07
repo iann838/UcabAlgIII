@@ -27,32 +27,65 @@ import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.awt.Color;
-import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Image;
 import java.awt.event.ActionEvent;
 
+/**
+*
+* @author Jian Feng
+* @author Arturo Hung
+* @author Kleysber Noguera
+* 
+*/
+
+
 @SuppressWarnings("serial")
 
-public class HomeView extends View implements ActionListener {
+public class HomeView extends View implements ActionListener { // Inicio de la clase HomeView
 
-    class ColumnColorRenderer extends DefaultTableCellRenderer {
-        Color backgroundColor, foregroundColor;
-
-        public ColumnColorRenderer(Color foregroundColor) {
-            super();
-            this.foregroundColor = foregroundColor;
-        }
-
-        public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus,
-                int row, int column) {
-            Component cell = super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
-            cell.setForeground(foregroundColor);
-            return cell;
-        }
-    }
-
+    /*
+     *   Atributos y/o campos de clase:
+     *   
+     *   container: El contenedor de la ventana de interfaz gráfica,
+     *   			la cual posee en su composición el resto de atributos
+     *   			y campos declarados en la clase
+     *                    
+     *   labelLogo: Etiqueta que muestra en la ventana el ícono
+     *   			"logo.png"
+     *   
+     *   labelTitle: Etiqueta que muestra en ventana el título de imagen
+     *               "letras.png"
+     *   
+     *   iconPath:  El url relativo de un determinado archivo de imagen 
+     *              ubicado en el directorio "resources"
+     *             
+     *   image, newImg, : Atributos empleados para dimensionar una 
+     *   imageIcon        etiqueta JLabel como imagen
+     *   
+     *   buttonCalculator: Botón que al accionar permite el 
+     *            	       redireccionamiento a la clase CalculatorView 
+     *                
+     *   buttonLogout: Botón que al accionar permite el
+     *                 redireccionamiento a la clase LoginView
+     *                
+     *   buttonPortfolio: Botón que al accionar permite el 
+     *                    redireccionamiento a la clase PortfolioView
+     *                    
+     *   buttonUserChange: Botón que al accionar permite el 
+     *                     redireccionamiento a la clase UserChangeView   
+     *                    
+     *   btnHtextalignCenter: Botón que permite el centrado de valores de la tabla
+     *   
+     *   labelUsername: Etiqueta que muestra en la ventana el mensaje de
+     *                  "User" con el usuario con cuenta activa al momento
+     *                  
+     *   labelLastLoggedIP: Etiqueta que muestra en la ventana el mensaje de
+     *                      IP de máquina del usuario con cuenta activa al momento
+     *    
+     */	
+	
     private JPanel container;
     private JScrollPane pane;
 
@@ -70,9 +103,13 @@ public class HomeView extends View implements ActionListener {
     private final String iconPath = "resources/logo.png";
     private JButton buttonUserChange;
     private JLabel labelUpdate;
-    private JButton btnHtextalignCenter;
     private JLabel labelLastLoggedIP;
 
+    /**
+    * Constructor por defecto de la clase 
+    * @param El constructor no posee ningún parámetro
+    */ 
+    
     public HomeView() {
 
         HomeView self = this;
@@ -85,6 +122,8 @@ public class HomeView extends View implements ActionListener {
         setIconImage(iconView.getImage());
         setBounds(100, 100, 1304, 680);
 
+        // Etiqueta de logo
+        
         labelLogo = new JLabel("");
         labelLogo.setBounds(35, 320, 110, 110);
 
@@ -96,6 +135,8 @@ public class HomeView extends View implements ActionListener {
         labelLogo = new JLabel(imageIcon);
         labelLogo.setBounds(70, 47, 110, 110); // setBounds (x,y,width,height)
 
+        // Etiqueta de título
+        
         labelTitle = new JLabel("");
         labelTitle.setBounds(155, 339, 3270, 76);
 
@@ -107,6 +148,8 @@ public class HomeView extends View implements ActionListener {
         labelTitle = new JLabel(imageIcon);
         labelTitle.setBounds(192, 67, 270, 76); // setBounds (x,y,width,height)
 
+        // Tabla de criptomonedas
+        
         cryptoTable = new JTable();
         cryptoTable.setModel(new DefaultTableModel(
                 new Object[][] { { null, null, null, null, null, null, null, null, null },
@@ -191,6 +234,8 @@ public class HomeView extends View implements ActionListener {
         cryptoTable.setShowVerticalLines(false);
         cryptoTable.setBounds(22, 132, 1200, 480);
 
+        // Encabezado de la tabla
+        
         header = cryptoTable.getTableHeader();
         header.setPreferredSize(new Dimension(1209, 50));
         header.setOpaque(false);
@@ -198,47 +243,63 @@ public class HomeView extends View implements ActionListener {
         header.setForeground(new Color(0, 0, 0));
         header.setEnabled(false);
 
+        // Etiqueta de nombre de usuario
+        
         labelUsername = new JLabel("Usuario: Undefined");
         labelUsername.setFont(new Font("Tahoma", Font.BOLD, 20));
         labelUsername.setHorizontalAlignment(SwingConstants.LEFT);
         labelUsername.setBounds(505, 47, 749, 33);
 
+        // Botón de salida
+        
         buttonLogout = new JButton("Logout");
         buttonLogout.setFont(new Font("Tahoma", Font.BOLD, 20));
-        buttonLogout.setBounds(63, 531, 165, 67);
+        buttonLogout.setBounds(138, 531, 165, 67);
         buttonLogout.addActionListener(self);
 
+        // Botón de Portfolio
+        
         buttonPortfolio = new JButton(
                 "<html>\r\n<style>\r\nh1 {text-align: center; font-size:14px }\r\n</style>\r\n<h1>Acceder Portafolio</h1>\r\n</html>");
         buttonPortfolio.setVerticalAlignment(SwingConstants.TOP);
         buttonPortfolio.setFont(new Font("Tahoma", Font.BOLD, 20));
-        buttonPortfolio.setBounds(516, 532, 201, 67);
+        buttonPortfolio.setBounds(672, 531, 201, 67);
         buttonPortfolio.addActionListener(self);
 
+        // Botón de modificación de datos de acceso
+        
         buttonUserChange = new JButton(
                 "<html>\r\n<style>\r\nh1 {text-align: center; font-size:14px }\r\n</style>\r\n<h1>Modificar datos de acceso</h1>\r\n</html>");
         buttonUserChange.setVerticalAlignment(SwingConstants.TOP);
         buttonUserChange.setFont(new Font("Tahoma", Font.BOLD, 20));
-        buttonUserChange.setBounds(274, 531, 201, 67);
+        buttonUserChange.setBounds(387, 531, 201, 67);
         buttonUserChange.addActionListener(self);
 
+        // Botón de calculadora
+        
         buttonCalculator = new JButton(
                 "<html>\r\n<style>\r\nh1 {text-align: center; font-size:14px }\r\n</style>\r\n<h1>Calculadora de conversi\u00F3n</h1>\r\n</html>");
         buttonCalculator.setVerticalAlignment(SwingConstants.TOP);
         buttonCalculator.setFont(new Font("Tahoma", Font.BOLD, 20));
-        buttonCalculator.setBounds(762, 531, 210, 67);
+        buttonCalculator.setBounds(959, 531, 210, 67);
         buttonCalculator.addActionListener(self);
 
+        // Etiqueta de actualización
+        
         labelUpdate = new JLabel("\u00DAltima actualizaci\u00F3n: Undefined");
         labelUpdate.setHorizontalAlignment(SwingConstants.LEFT);
         labelUpdate.setFont(new Font("Tahoma", Font.BOLD, 20));
         labelUpdate.setBounds(505, 113, 749, 33);
 
+        // Barras de desplazamiento
+        
         pane = new JScrollPane(cryptoTable);
         pane.setBounds(45, 195, 1209, 292);
         pane.setViewportBorder(null);
         pane.setBorder(BorderFactory.createEmptyBorder());
 
+        // Contenedor
+        
         container = new JPanel();
         container.setBackground(new Color(140, 160, 206));
         container.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -253,17 +314,6 @@ public class HomeView extends View implements ActionListener {
         container.add(buttonUserChange);
         container.add(buttonCalculator);
         container.add(labelUpdate);
-
-        btnHtextalignCenter = new JButton(
-                "<html>\r\n<style>\r\nh1 {text-align: center; font-size:14px }\r\n</style>\r\n<h1>Consultar inversiones</h1>\r\n</html>");
-        btnHtextalignCenter.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-            }
-        });
-        btnHtextalignCenter.setVerticalAlignment(SwingConstants.TOP);
-        btnHtextalignCenter.setFont(new Font("Tahoma", Font.BOLD, 20));
-        btnHtextalignCenter.setBounds(1015, 531, 210, 67);
-        container.add(btnHtextalignCenter);
         
         labelLastLoggedIP = new JLabel("\u00DAltima login IP: Undefined");
         labelLastLoggedIP.setHorizontalAlignment(SwingConstants.LEFT);
@@ -348,4 +398,4 @@ public class HomeView extends View implements ActionListener {
             }
         }).start();
     }
-}
+} // Cierre de la clase HomeView
