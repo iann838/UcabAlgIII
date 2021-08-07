@@ -64,3 +64,9 @@ Implemente las clases Circulo, triangulo, cuadrado que represente la informació
 **Requires: [Gson](https://search.maven.org/artifact/com.google.code.gson/gson/2.8.7/jar)**
 
 [Click to download](https://downgit.github.io/#/home?url=https://github.com/paaksing/UcabAlgIII/tree/master/Alg3Taller6Grupo7)
+
+### Proyecto 2
+
+**Requires: [Gson](https://search.maven.org/artifact/com.google.code.gson/gson/2.8.7/jar), [ApacheHTTP](https://jar-download.com/artifact-search/httpclient)**
+
+[Click to download](https://downgit.github.io/#/home?url=https://github.com/paaksing/UcabAlgIII/tree/master/Alg3Proyecto2Grupo3)
