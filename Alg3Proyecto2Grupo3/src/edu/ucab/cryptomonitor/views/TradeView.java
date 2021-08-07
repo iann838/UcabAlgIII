@@ -270,7 +270,7 @@ public class TradeView extends View implements ActionListener {
             dispatchEvent(new WindowEvent(this, WindowEvent.WINDOW_CLOSING));
         }
         if (e.getSource() == this.buttonBuy) {
-            if (this.lblBuyCurrencyAmount.getText().isEmpty()) {
+            if (this.txtBuyCurrencyAmount.getText().isEmpty()) {
                 JOptionPane.showMessageDialog(this, "Debe ingresar una cantidad.");
                 return;
             }
@@ -306,7 +306,7 @@ public class TradeView extends View implements ActionListener {
             }
         }
         if (e.getSource() == this.btnSell) {
-            if (this.lblBuyCurrencyAmount.getText().isEmpty()) {
+            if (this.txtSellCurrencyAmount.getText().isEmpty()) {
                 JOptionPane.showMessageDialog(this, "Debe ingresar una cantidad.");
                 return;
             }
